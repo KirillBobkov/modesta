@@ -1,0 +1,96 @@
+.advantages__item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    min-height: 280px;
+    width: 100%;
+    padding: 50px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.advantages__item:last-child {
+    margin-bottom: 0;
+}
+
+.advantages__item-text {
+    max-width: 400px;
+    vertical-align: middle;
+    font-size: 18px;
+    line-height: 32px;
+}
+
+.advantages__item--gray {
+    background-color: rgb(51,51,51);
+}
+
+.advantages__item--min-light-gray {
+    background-color: rgb(89, 89, 89);
+}
+
+.advantages__item--medium-light-gray {
+    background-color: rgb(150, 150, 150);
+}
+
+.advantages__item--max-light-gray {
+    color: #000000;
+    background-color: rgb(215, 215, 215);
+}
+
+.advantages__item--right {
+    justify-content: flex-end;
+    text-align: right;
+}
+
+.advantages__item--left {
+    justify-content: flex-start;
+    text-align: left;
+    background-repeat: no-repeat;
+}
+
+.advantage__item--1-background {
+    background-image: url(../img/advantage_1.png);
+    background-repeat: no-repeat;
+    background-position: 10% center;
+    background-size: 40%;
+}
+
+.advantage__item--2-background {
+    background-image: url(../img/advantage_2.png);
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-position: 130% center;
+    background-size: 70%;
+}
+
+.advantage__item--3-background {
+    background-image: url(../img/advantage_3.png);
+    background-repeat: no-repeat;
+    background-repeat: no-repeat;
+    background-position: -30% center;
+    background-size: 60%;
+}
+
+.advantage__item--4-background {
+    background-image: url(../img/advantage_4.png);
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-position: 100% center;
+    background-size: 60%;
+}
+
+.advantage__item--5-background {
+    background-image: url(../img/advantage_5.png);
+    background-repeat: no-repeat;
+    background-position: 10% center;
+    background-size: 40%;
+}
+
+.advantage__item--6-background {
+    background-image: url(../img/advantage_6.png);
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-position: 100% center;
+    background-size: 60%;
+}
