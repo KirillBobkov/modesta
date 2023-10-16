@@ -1,0 +1,37 @@
+.tech {
+    background-image: url(../img/tech_background.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 40%;
+}
+
+.tech__item {
+    display: flex;
+    width: 400px;
+    border-radius: 20px;
+    padding: 30px;
+    gap: 10px;
+    background-color: rgb(89, 89, 89);
+}
+
+.tech__number {
+    color: #888888;
+    font-size: 60px;
+    line-height: 70px;
+    flex: 20%;
+}
+
+.tech__content {
+    font-size: 18px;
+    line-height: 24px;
+    text-align: left;
+    flex: 80%;
+}
+
+.tech__item:nth-child(even) {
+    margin: 0 auto 10px 0;
+}
+
+.tech__item:nth-child(odd) {
+    margin: 0 0 10px auto;
+}
