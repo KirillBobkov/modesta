@@ -1,0 +1,42 @@
+.team {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.person {
+    width: 300px;
+    border-radius: 20px;
+    padding: 30px;
+    background-color: rgb(89, 89, 89);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.person__avatar {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.person__name {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 24px;
+    line-height: 32px;
+}
+
+.person__bio {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.person__profession {
+    text-align: center;
+}
