@@ -21,7 +21,7 @@
 .history__image-overlay {
     position: absolute;
     z-index: 2;
-    top: 50%;
+    top: 40%;
     left: 30%;
     width: 60%;
     height: auto;
