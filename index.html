@@ -13,6 +13,7 @@
     <link href="css/history.css" rel="stylesheet">
     <link href="css/team.css" rel="stylesheet">
     <link href="css/tech.css" rel="stylesheet">
+    <link href="css/problems.css" rel="stylesheet">
 </head>
 
 <body>
@@ -24,9 +25,9 @@
                 </div>
                 <div class="nav">
                     <a class="nav-item" href="#history">О нас</a>
-                    <a class="nav-item"  href="#advantages">Преимущества</a>
-                    <a class="nav-item"  href="#tech">Характеристики</a>
-                    <a class="nav-item"  href="#team">Наша команда</a>       
+                    <a class="nav-item" href="#advantages">Преимущества</a>
+                    <a class="nav-item" href="#tech">Характеристики</a>
+                    <a class="nav-item" href="#team">Наша команда</a>
                     <a class="nav-item" href="@"
                         style="border-right: 1px solid #FFFFFF; padding-right: 10px; height: 50px;">Как получить?</a>
                     <a class="button" href="@"> Заполнить акнету </a>
@@ -101,28 +102,32 @@
                 <div class="tech__item">
                     <h2 class="tech__number">01</h2>
                     <div class="tech__content">
-                        <span class="tech__text">Протез не антропоморфного типа, с несколькими сменными вариантами конечностей захватного
+                        <span class="tech__text">Протез не антропоморфного типа, с несколькими сменными вариантами
+                            конечностей захватного
                             устройства.</span>
                     </div>
                 </div>
                 <div class="tech__item">
                     <h2 class="tech__number">02</h2>
                     <div class="tech__content">
-                        <span class="tech__text">Дополнительная возможность установки модуля вибротактильной обратной связи в протез (для пользователей старше 18 лет).
+                        <span class="tech__text">Дополнительная возможность установки модуля вибротактильной обратной
+                            связи в протез (для пользователей старше 18 лет).
                         </span>
                     </div>
                 </div>
                 <div class="tech__item">
                     <h2 class="tech__number">03</h2>
                     <div class="tech__content">
-                        <span class="tech__text">Использование легких, прочных материала в корпусных изделиях и в основе конструкции (раме
+                        <span class="tech__text">Использование легких, прочных материала в корпусных изделиях и в основе
+                            конструкции (раме
                             протеза).</span>
                     </div>
                 </div>
                 <div class="tech__item">
                     <h2 class="tech__number">04</h2>
                     <div class="tech__content">
-                        <span class="tech__text">Дизайнерское решение, при котором не теряются технологические функции и остаётся
+                        <span class="tech__text">Дизайнерское решение, при котором не теряются технологические функции и
+                            остаётся
                             приемлемый облик изделия.</span>
                     </div>
                 </div>
@@ -130,7 +135,7 @@
         </div>
         <div class="container">
             <h1 class="container__title" id="team">Наша команда</h1>
-            <div class="team" >
+            <div class="team">
                 <div class="person">
                     <img class="person__avatar" src="img/avatar1.png">
                     <span class="person__name">Сахатский А.С.</span>
@@ -175,6 +180,113 @@
                 </div>
             </div>
         </div>
+        <div class="container">
+            <h1 class="container__title" id="team">Решаемые проблемы</h1>
+            <section class="problems">
+                <ul class="problem__container">
+                    <li class="problem">
+                        <img class="problem__image" src="img/problem1.png" alt="problem__image" />
+                        <div class="problem__content">
+                            <h2 class="problem__title">Собственное производство</h2>
+                            <span class="problem__description">В России малое количество протезных предприятий.
+                                Мы создание новые и усовершенствуеме существующие изделия, на базе оборудованных
+                                производственных помещений.</span>
+                        </div>
+
+                    </li>
+                    <li class="problem">
+                        <img class="problem__image" src="img/problem2.png" alt="problem__image" />
+                        <div class="problem__content">
+                            <h2 class="problem__title">Ограниченный функционал
+                                изделий других компаний
+                            </h2>
+                            <span class="problem__description">Через гос. заказ, более 85% продукции реализуется в виде
+                                косметических изделий (неэффективных в быту).
+                            </span>
+                        </div>
+                    </li>
+                    <li class="problem">
+                        <img class="problem__image" src="img/problem3.png" alt="problem__image" />
+                        <div class="problem__content">
+                            <h2 class="problem__title">Несвоевременный ремонт</h2>
+                            <span class="problem__description">Многие импортные изделия, в условиях санкций, обслуживать
+                                затруднительно (логистика) или
+                                невозможно. Мы оказываем помощь с ремонтом импортных протезов.
+                            </span>
+                        </div>
+                    </li>
+                    <li class="problem">
+                        <img class="problem__image" src="img/problem4.png" alt="problem__image" />
+                        <div class="problem__content">
+                            <h2 class="problem__title">Непостоянный процесс реабилитации
+                            </h2>
+                            <span class="problem__description">Мы проводим постоянную работу с реабилитологами и пишем
+                                индивидуальные программы.
+                                Осуществляяем создание собственного программного обеспечения для получения обратной
+                                связи от
+                                пользователей.
+                            </span>
+
+                        </div>
+                    </li>
+                </ul>
+                <button class="slide-arrow" id="slide-arrow-prev">
+                    <svg part="svg" class="svg" viewBox="0 0 32 32" data-icon-name="arrow-back">
+                        <path
+                            d="M14.667 7.267l1.867 1.867-5.6 5.6h15.2v2.667h-15.067l5.467 5.467-1.867 1.867-8.8-8.8 0.267-0.267 8.533-8.4z">
+                        </path>
+                    </svg>
+                </button>
+                <button class="slide-arrow" id="slide-arrow-next">
+                    <svg part="svg" class="svg" viewBox="0 0 32 32" data-icon-name="arrow-action-step">
+                        <path
+                            d="M17.333 24.733l-1.867-1.867 5.6-5.6h-15.2v-2.667h15.067l-5.467-5.467 1.867-1.867 8.8 8.8-0.267 0.267-8.533 8.4z">
+                        </path>
+                    </svg>
+                </button>
+            </section>
+        </div>
     </main>
 </body>
+
+<script>
+    const slidesContainer = document.querySelector(".problem__container");
+    const slide = document.querySelector(".problem");
+    const prevButton = document.getElementById("slide-arrow-prev");
+    const nextButton = document.getElementById("slide-arrow-next");
+    let timeout = false;
+
+    nextButton.addEventListener("click", () => {
+        if (timeout) return;
+        timeout = true;
+        setTimeout(() => {
+            timeout = false;
+        }, 800);
+
+        const slideWidth = slide.clientWidth;
+        if (Math.abs(slidesContainer.scrollWidth - slideWidth - slidesContainer.scrollLeft) < 20) {
+            slidesContainer.scrollLeft = 0;
+        } else {
+            const nextLeft = slidesContainer.scrollLeft + slideWidth;
+            slidesContainer.scrollLeft = nextLeft;
+        }
+    });
+
+    prevButton.addEventListener("click", () => {
+        if (timeout) return;
+        timeout = true;
+        setTimeout(() => {
+            timeout = false;
+        }, 800);
+
+        const slideWidth = slide.clientWidth;
+        if (slidesContainer.scrollLeft === 0) {
+            slidesContainer.scrollLeft = slidesContainer.scrollWidth;
+        } else {
+            const prevLeft = slidesContainer.scrollLeft - slideWidth;
+            slidesContainer.scrollLeft = prevLeft;
+        }
+    });
+</script>
+
 </html>
