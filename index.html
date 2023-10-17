@@ -183,8 +183,8 @@
         <div class="container">
             <h1 class="container__title" id="team">Решаемые проблемы</h1>
             <section class="problems">
-                <ul class="problem__container">
-                    <li class="problem">
+                <ul class="problem__container" id="problem-container">
+                    <li class="problem" id="problem">
                         <img class="problem__image" src="img/problem1.png" alt="problem__image" />
                         <div class="problem__content">
                             <h2 class="problem__title">Собственное производство</h2>
@@ -247,13 +247,22 @@
             </section>
         </div>
     </main>
+    <button class="go-up-button" id="go-up-button">
+        <svg part="svg" class="svg" viewBox="0 0 32 32" data-icon-name="arrow-action-step">
+            <path
+                d="M17.333 24.733l-1.867-1.867 5.6-5.6h-15.2v-2.667h15.067l-5.467-5.467 1.867-1.867 8.8 8.8-0.267 0.267-8.533 8.4z">
+            </path>
+        </svg>
+    </button>
 </body>
 
 <script>
-    const slidesContainer = document.querySelector(".problem__container");
-    const slide = document.querySelector(".problem");
+    const slidesContainer = document.getElementById("problem-container");
+    const slide = document.getElementById("problem");
     const prevButton = document.getElementById("slide-arrow-prev");
     const nextButton = document.getElementById("slide-arrow-next");
+    const goUpButton = document.getElementById("go-up-button");
+
     let timeout = false;
 
     nextButton.addEventListener("click", () => {
@@ -286,6 +295,20 @@
             const prevLeft = slidesContainer.scrollLeft - slideWidth;
             slidesContainer.scrollLeft = prevLeft;
         }
+    });
+
+    document.addEventListener("scroll", (event) => {
+        const maxHeight = document.body.scrollHeight - window.innerHeight;
+        const scrollPercent = (window.pageYOffset * 100) / maxHeight;
+        if (scrollPercent > 50) {
+            goUpButton.classList.add('go-up-button--visible')
+        } else {
+            goUpButton.classList.remove('go-up-button--visible');
+        }
+    });
+
+    goUpButton.addEventListener("click", () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
     });
 </script>
 

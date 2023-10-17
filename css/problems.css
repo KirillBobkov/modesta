@@ -44,35 +44,6 @@
     background: transparent;
     border: none;
   }
-  
-  .slide-arrow {
-    position: absolute;
-    display: flex;
-    bottom: 30px;
-    margin: auto;
-    height: 2rem;
-    border: none;
-    width: 2rem;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background-color 100ms;
-    transform: translateX(100%);
-    border-radius: 50%;
-    fill: #ffffff;
-    background-color: rgb(119, 119, 119);
-  }
-  
-  .slide-arrow:hover {
-    background-color: rgb(149, 149, 149);
-  }
-  
-  #slide-arrow-prev {
-    right: calc(50% - 40px);
-  }
-  
-  #slide-arrow-next {
-    right: calc(50% - 40px - 10px - 2rem);
-  }
 
   .problem__image {
     width: 50%;
@@ -94,3 +65,34 @@
     font-size: 16px;
     line-height: 24px;
   }
+
+  .slide-arrow {
+    position: absolute;
+    display: flex;
+    bottom: 30px;
+    margin: auto;
+    height: 50px;
+    border: none;
+    width: 50px;
+    padding: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 100ms;
+    transform: translateX(100%);
+    border-radius: 50%;
+    fill: #ffffff;
+    background-color: rgb(119, 119, 119);
+  }
+  
+  .slide-arrow:hover {
+    background-color: rgb(149, 149, 149);
+  }
+  
+  #slide-arrow-prev {
+    right: calc(50% - 40px);
+  }
+  
+  #slide-arrow-next {
+    right: calc(50% - 40px - 10px - 50px);
+  }
+
