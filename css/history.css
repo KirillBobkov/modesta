@@ -6,6 +6,7 @@
 .history__images {
     position: relative;
     width: 50%;
+    
 }
 
 .history__image-underlay {
@@ -16,6 +17,7 @@
     width: 80%;
     height: auto;
     border-radius: 20px;
+    border: 2px solid white;
 }
 
 .history__image-overlay {
@@ -26,6 +28,7 @@
     width: 60%;
     height: auto;
     border-radius: 20px;
+    border: 2px solid white;
 }
 
 .history__content {

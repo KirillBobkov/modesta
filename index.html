@@ -14,6 +14,7 @@
     <link href="css/team.css" rel="stylesheet">
     <link href="css/tech.css" rel="stylesheet">
     <link href="css/problems.css" rel="stylesheet">
+    <link href="css/designs.css" rel="stylesheet">
 </head>
 
 <body>
@@ -230,14 +231,41 @@
                         </div>
                     </li>
                 </ul>
-                <button class="slide-arrow" id="slide-arrow-prev">
+                <button class="problem__prev-button slide-arrow" id="problem-prev-button">
                     <svg part="svg" class="svg" viewBox="0 0 32 32" data-icon-name="arrow-back">
                         <path
                             d="M14.667 7.267l1.867 1.867-5.6 5.6h15.2v2.667h-15.067l5.467 5.467-1.867 1.867-8.8-8.8 0.267-0.267 8.533-8.4z">
                         </path>
                     </svg>
                 </button>
-                <button class="slide-arrow" id="slide-arrow-next">
+                <button class="problem__next-button slide-arrow" id="problem-next-button">
+                    <svg part="svg" class="svg" viewBox="0 0 32 32" data-icon-name="arrow-action-step">
+                        <path
+                            d="M17.333 24.733l-1.867-1.867 5.6-5.6h-15.2v-2.667h15.067l-5.467-5.467 1.867-1.867 8.8 8.8-0.267 0.267-8.533 8.4z">
+                        </path>
+                    </svg>
+                </button>
+            </section>
+        </div>
+        <div class="container">
+            <h1 class="container__title" id="team">Текущая стадия</h1>
+            <section class="designs">
+                <ul class="designs__container" id="designs-container">
+                    <li class="design__item" id="design-item">
+                        <img class="design__image" src="img/design1.png" alt="design__image" />
+                    </li>
+                    <li class="design__item">
+                        <img class="design__image" src="img/design2.png" alt="design__image" />
+                    </li>
+                </ul>
+                <button class="design__prev-button slide-arrow" id="design-prev-button">
+                    <svg part="svg" class="svg" viewBox="0 0 32 32" data-icon-name="arrow-back">
+                        <path
+                            d="M14.667 7.267l1.867 1.867-5.6 5.6h15.2v2.667h-15.067l5.467 5.467-1.867 1.867-8.8-8.8 0.267-0.267 8.533-8.4z">
+                        </path>
+                    </svg>
+                </button>
+                <button class="design__next-button slide-arrow" id="design-next-button">
                     <svg part="svg" class="svg" viewBox="0 0 32 32" data-icon-name="arrow-action-step">
                         <path
                             d="M17.333 24.733l-1.867-1.867 5.6-5.6h-15.2v-2.667h15.067l-5.467-5.467 1.867-1.867 8.8 8.8-0.267 0.267-8.533 8.4z">
@@ -257,50 +285,88 @@
 </body>
 
 <script>
-    const slidesContainer = document.getElementById("problem-container");
-    const slide = document.getElementById("problem");
-    const prevButton = document.getElementById("slide-arrow-prev");
-    const nextButton = document.getElementById("slide-arrow-next");
+    const problemContainer = document.getElementById("problem-container");
+    const problemSlide = document.getElementById("problem");
+    const problemPrevButton = document.getElementById("problem-prev-button");
+    const problemNextButton = document.getElementById("problem-next-button");
+
+    const designContainer = document.getElementById("designs-container");
+    const designSlide = document.getElementById("design-item");
+    const designPrevButton = document.getElementById("design-prev-button");
+    const designNextButton = document.getElementById("design-next-button");
+
     const goUpButton = document.getElementById("go-up-button");
 
     let timeout = false;
 
-    nextButton.addEventListener("click", () => {
+    problemNextButton.addEventListener("click", () => {
         if (timeout) return;
         timeout = true;
         setTimeout(() => {
             timeout = false;
         }, 800);
 
-        const slideWidth = slide.clientWidth;
-        if (Math.abs(slidesContainer.scrollWidth - slideWidth - slidesContainer.scrollLeft) < 20) {
-            slidesContainer.scrollLeft = 0;
+        const problemSlideWidth = problemSlide.clientWidth;
+        if (Math.abs(problemContainer.scrollWidth - problemSlideWidth - problemContainer.scrollLeft) < 20) {
+            problemContainer.scrollLeft = 0;
         } else {
-            const nextLeft = slidesContainer.scrollLeft + slideWidth;
-            slidesContainer.scrollLeft = nextLeft;
+            const nextLeft = problemContainer.scrollLeft + problemSlideWidth;
+            problemContainer.scrollLeft = nextLeft;
         }
     });
 
-    prevButton.addEventListener("click", () => {
+    problemPrevButton.addEventListener("click", () => {
         if (timeout) return;
         timeout = true;
         setTimeout(() => {
             timeout = false;
         }, 800);
 
-        const slideWidth = slide.clientWidth;
-        if (slidesContainer.scrollLeft === 0) {
-            slidesContainer.scrollLeft = slidesContainer.scrollWidth;
+        const problemSlideWidth = problemSlide.clientWidth;
+        if (problemContainer.scrollLeft === 0) {
+            problemContainer.scrollLeft = problemContainer.scrollWidth;
         } else {
-            const prevLeft = slidesContainer.scrollLeft - slideWidth;
-            slidesContainer.scrollLeft = prevLeft;
+            const prevLeft = problemContainer.scrollLeft - problemSlideWidth;
+            problemContainer.scrollLeft = prevLeft;
+        }
+    });
+
+    designNextButton.addEventListener("click", () => {
+        if (timeout) return;
+        timeout = true;
+        setTimeout(() => {
+            timeout = false;
+        }, 800);
+
+        const designSlideWidth = designSlide.clientWidth;
+        if (Math.abs(designContainer.scrollWidth - designSlideWidth - designContainer.scrollLeft) < 20) {
+            designContainer.scrollLeft = 0;
+        } else {
+            const nextLeft = designContainer.scrollLeft + designSlideWidth;
+            designContainer.scrollLeft = nextLeft;
+        }
+    });
+
+    designPrevButton.addEventListener("click", () => {
+        if (timeout) return;
+        timeout = true;
+        setTimeout(() => {
+            timeout = false;
+        }, 800);
+
+        const designSlideWidth = designSlide.clientWidth;
+        if (designContainer.scrollLeft === 0) {
+            designContainer.scrollLeft = designContainer.scrollWidth;
+        } else {
+            const prevLeft = designContainer.scrollLeft - designSlideWidth;
+            designContainer.scrollLeft = prevLeft;
         }
     });
 
     document.addEventListener("scroll", (event) => {
         const maxHeight = document.body.scrollHeight - window.innerHeight;
         const scrollPercent = (window.pageYOffset * 100) / maxHeight;
-        if (scrollPercent > 50) {
+        if (scrollPercent > 10) {
             goUpButton.classList.add('go-up-button--visible')
         } else {
             goUpButton.classList.remove('go-up-button--visible');

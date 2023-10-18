@@ -66,33 +66,16 @@
     line-height: 24px;
   }
 
-  .slide-arrow {
+  .problem__prev-button {
     position: absolute;
-    display: flex;
     bottom: 30px;
-    margin: auto;
-    height: 50px;
-    border: none;
-    width: 50px;
-    padding: 10px;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background-color 100ms;
-    transform: translateX(100%);
-    border-radius: 50%;
-    fill: #ffffff;
-    background-color: rgb(119, 119, 119);
-  }
-  
-  .slide-arrow:hover {
-    background-color: rgb(149, 149, 149);
-  }
-  
-  #slide-arrow-prev {
     right: calc(50% - 40px);
+    transform: translateX(100%);
   }
   
-  #slide-arrow-next {
+  .problem__next-button {
+    position: absolute;
+    bottom: 30px;
     right: calc(50% - 40px - 10px - 50px);
+    transform: translateX(100%);
   }
-
