@@ -1,0 +1,55 @@
+.footer {
+    color: white;
+    width: 100%;
+    min-height: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 40px;
+    margin-top: -20px;
+}
+
+.footer a {
+    color: white;
+}
+
+.footerimgSK {
+    width: 80px;
+    height: auto;
+    border-radius: 5px;
+    margin-top: 32px;
+}
+
+.footerimgTG {
+    width: 100px;
+    height: auto;
+    border-radius: 5px;
+}
+
+
+.footer__mail {
+    margin-bottom: 10px;
+}
+
+
+.footer__soc {
+    margin-bottom: 10px;
+}
+
+
+.footer__number2 {
+    margin-bottom: 10px;
+}
+
+.footer__SMI {
+    margin-bottom: 10px;
+}
+
+.footer__SMI-link {
+    width: 100px;
+    height: auto;
+    border-radius: 5px;
+}

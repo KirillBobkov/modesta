@@ -13,7 +13,6 @@
     overflow: hidden;
   }
 
-  
   .problem__container {
     height: 500px;
     width: 100%;
@@ -26,7 +25,6 @@
     padding: 0;
     box-sizing: border-box;
     scrollbar-color: transparent transparent;
-    scrollbar-width: 0px;
     scrollbar-width: none; 
     -ms-overflow-style: none;
   }

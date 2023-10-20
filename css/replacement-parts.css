@@ -1,0 +1,95 @@
+.replacement-parts {
+    width: 100%;
+    height: 500px;
+    background-color: rgb(89, 89, 89);
+    position: relative;
+    overflow: hidden;
+}
+
+.envelope .acesories {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    background-image: url(../img/replacement_parts_main.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 60%;
+}
+
+.envelope .askolenada {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 60%;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+    justify-content: space-between;
+    animation: animate 15s linear infinite;
+    animation-delay: calc(3s * var(--delay));
+}
+
+.askolenada--1 {
+    background-image: url(../img/replacement_part_1.png);
+}
+
+.askolenada--2 {
+    background-image: url(../img/replacement_part_2.png);
+}
+
+.askolenada--3 {
+    background-image: url(../img/replacement_part_3.png);
+}
+
+.askolenada--4 {
+    background-image: url(../img/replacement_part_1.png);
+}
+
+.askolenada--5 {
+    background-image: url(../img/replacement_part_2.png);
+}
+
+.envelope .askolenada:last-child {
+    animation-delay: calc(-3s * var(--delay));
+}
+
+@keyframes animate {
+    0% {
+        opacity: 0;
+        transform: translateY(100%) scale(0.5);
+    }
+
+    5%,
+    20% {
+        opacity: 0.4;
+        transform: translateY(100%) scale(0.7);
+    }
+
+    25%,
+    40% {
+        opacity: 1;
+        pointer-events: auto;
+        transform: translateY(0%) scale(1);
+    }
+
+    45%,
+    60% {
+        opacity: 0.4;
+        transform: translateY(-100%) scale(0.7);
+    }
+
+    65%,
+    100% {
+        opacity: 0;
+        transform: translateY(-100%) scale(0.5);
+    }
+}
+
+.askolenada .keeping {
+    display: flex;
+    align-items: center;
+}
