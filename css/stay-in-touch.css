@@ -1,0 +1,58 @@
+.stay-in-touch {
+    background-image: url(../img/stay_in_touch_bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 600px;
+    width: 100%;
+    padding: 0 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.stay-in-touch__card {
+    max-width: 1120px;
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: rgb(89, 89, 89);
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.stay-in-touch__content {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.stay-in-touch__image {
+    width: 300px;
+    height: auto;
+}
+
+.stay-in-touch__title {
+    font-size: 42px;
+    line-height: 52px;
+    margin-bottom: 20px;
+}
+
+.stay-in-touch__description {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 20px;
+}
+
+.stay-in-touch__link {
+    background-color: #229ED9;
+    border-radius: 20px;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    gap: 10px;
+}

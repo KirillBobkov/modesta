@@ -14,6 +14,11 @@
     background-color: rgb(89, 89, 89);
 }
 
+.tech__text {
+    font-size: 18px;
+    line-height: 32px;
+}
+
 .tech__number {
     color: #888888;
     font-size: 60px;
@@ -22,8 +27,6 @@
 }
 
 .tech__content {
-    font-size: 18px;
-    line-height: 24px;
     text-align: left;
     flex: 80%;
 }

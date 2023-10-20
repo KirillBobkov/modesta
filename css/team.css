@@ -35,7 +35,7 @@
     margin-bottom: 20px;
     text-align: center;
     font-size: 12px;
-    line-height: 16px;
+    line-height: 20px;
 }
 
 .person__profession {
@@ -85,7 +85,7 @@
 .person-2__bio {
     margin-bottom: 20px;
     font-size: 12px;
-    line-height: 16px;
+    line-height: 20px;
     text-align: right;
     width: 100%;
 }
