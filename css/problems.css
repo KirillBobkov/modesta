@@ -30,15 +30,14 @@
   }
 
   .problem__container::-webkit-scrollbar {
-    width: 0;
     display: none;
   }
   
-  .problem__container ::-webkit-scrollbar-track {
+  .problem__container::-webkit-scrollbar-track {
     background: transparent;
   }
   
-  .problem__container ::-webkit-scrollbar-thumb {
+  .problem__container::-webkit-scrollbar-thumb {
     background: transparent;
     border: none;
   }

@@ -11,10 +11,13 @@
     align-items: center;
     justify-content: center;
     height: 500px;
+    max-width: 1200px;
+    margin: 0 auto;
     background-image: url(../img/replacement_parts_main.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 60%;
+    transform: rotate(-30deg)
 }
 
 .envelope .askolenada {
@@ -60,13 +63,13 @@
 @keyframes animate {
     0% {
         opacity: 0;
-        transform: translateY(100%) scale(0.5);
+        transform: translateY(-100%) scale(0.5);
     }
 
     5%,
     20% {
         opacity: 0.4;
-        transform: translateY(100%) scale(0.7);
+        transform: translateY(-100%) scale(0.7);
     }
 
     25%,
@@ -79,13 +82,13 @@
     45%,
     60% {
         opacity: 0.4;
-        transform: translateY(-100%) scale(0.7);
+        transform: translateY(100%) scale(0.7);
     }
 
     65%,
     100% {
         opacity: 0;
-        transform: translateY(-100%) scale(0.5);
+        transform: translateY(100%) scale(0.5);
     }
 }
 

@@ -31,21 +31,21 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    scrollbar-color: transparent transparent;
+    scrollbar-color: transparent;
     scrollbar-width: none; 
     -ms-overflow-style: none;
   }
 
-  .design__container::-webkit-scrollbar {
-    width: 0;
+  .designs__container::-webkit-scrollbar {
     display: none;
+    width: 0;
   }
   
-  .design__container ::-webkit-scrollbar-track {
+  .designs__container::-webkit-scrollbar-track {
     background: transparent;
   }
   
-  .design__container ::-webkit-scrollbar-thumb {
+  .designs__container::-webkit-scrollbar-thumb {
     background: transparent;
     border: none;
   }
