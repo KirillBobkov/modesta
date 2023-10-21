@@ -29,7 +29,7 @@
     pointer-events: none;
     position: absolute;
     justify-content: space-between;
-    animation: animate 15s linear infinite;
+    animation: animate 15s ease-in-out infinite;
     animation-delay: calc(3s * var(--delay));
 }
 
