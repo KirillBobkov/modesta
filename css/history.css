@@ -4,33 +4,6 @@
     margin: 0 auto;
 }
 
-.history__images {
-    position: relative;
-    width: 50%;
-}
-
-.history__image-underlay {
-    position: absolute;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    width: 80%;
-    height: auto;
-    border-radius: 20px;
-    border: 2px solid white;
-}
-
-.history__image-overlay {
-    position: absolute;
-    z-index: 2;
-    top: 40%;
-    left: 30%;
-    width: 60%;
-    height: auto;
-    border-radius: 20px;
-    border: 2px solid white;
-}
-
 .history__content {
     width: 100;
     font-size: 18px;

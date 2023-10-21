@@ -2,7 +2,7 @@
     background-image: url(../img/tech_background.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
-    background-size: 30%;
+    background-size: 50%;
 }
 
 .tech__item {
@@ -11,7 +11,7 @@
     border-radius: 20px;
     padding: 30px;
     gap: 10px;
-    background-color: rgb(89, 89, 89);
+    background-color: var(--card-bg-color);
 }
 
 .tech__text {
@@ -20,7 +20,6 @@
 }
 
 .tech__number {
-    color: #888888;
     font-size: 60px;
     line-height: 70px;
     flex: 20%;

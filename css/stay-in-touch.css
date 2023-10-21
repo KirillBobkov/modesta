@@ -17,8 +17,8 @@
     width: 100%;
     margin: 0 auto;
     border-radius: 20px;
-    overflow: hidden;
-    background-color: rgb(89, 89, 89);
+    overflow: hidden;    
+    background-color: var(--card-bg-color);
     display: flex;
     flex-wrap: nowrap;
 }

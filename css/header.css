@@ -23,3 +23,27 @@
 .nav-item:hover {
     color:aqua;
 }
+
+.nav-button {
+    position: relative;
+    margin-left: 25px;
+}
+
+.nav-button::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: -25px;
+    width: 2px;
+    height: 100%;
+    background-color: var(--font-color);
+}
+
+.nav-button--disabled {
+    opacity: 0.5;
+    user-select: none;
+}
+
+.header-logo svg path {
+    fill: var(--font-color)!important;
+}

@@ -1,0 +1,25 @@
+:root {
+    --font-color: #ffffff;
+    --font-color-2: #ffffff;
+    
+    --bg-color: #000000;
+
+    --bg-color-2: #202020;
+    --bg-color-3: #202020;
+
+    --card-bg-color: #202020;
+    --box-shadow: rgba(0, 16, 61, 0.07);
+}
+
+:root[theme='dark'] {
+    --font-color: #424242;
+    --font-color-2: #ffffff;
+    
+    --card-bg-color: #fff;
+    --bg-color: #eeeeee;
+
+    --bg-color-2: #202020;
+    --bg-color-3: #202020;
+
+    --box-shadow: rgba(0, 16, 61, 0.07);
+}
