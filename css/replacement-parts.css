@@ -10,8 +10,8 @@
     margin: 0 auto;
 }
 
-.replacement-parts__container {
-    background: linear-gradient(90deg, var(--bg-color-3) 10%, var(--bg-color-2) 90%);
+.replacement-parts__container { 
+     background: linear-gradient(90deg, var(--bg-color-gradient-1) 10%, var(--bg-color-gradient-2) 90%);
 }
 
 .replacement-parts__title {

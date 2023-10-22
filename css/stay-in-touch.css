@@ -1,8 +1,4 @@
 .stay-in-touch {
-    background-image: url(../img/stay_in_touch_bg.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
     min-height: 600px;
     width: 100%;
     padding: 0 40px;
@@ -10,6 +6,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background: linear-gradient(90deg, var(--bg-color-gradient-1) 10%, var(--bg-color-gradient-2) 90%);
 }
 
 .stay-in-touch__card {
@@ -18,7 +15,8 @@
     margin: 0 auto;
     border-radius: 20px;
     overflow: hidden;    
-    background-color: var(--card-bg-color);
+    color: var(--font-color);
+    background-color: var(--bg-color);
     display: flex;
     flex-wrap: nowrap;
 }

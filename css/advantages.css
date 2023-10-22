@@ -8,7 +8,8 @@
     margin-bottom: 40px;
     border-radius: 20px;
     overflow: hidden;
-    background-color: var(--card-bg-color);
+    background-color: var(--card-bg-color-2);
+    color: var(--font-color-2);
     transition: all 0.2s ease-in-out;
     background-repeat: no-repeat;
     background-position: 10% center;

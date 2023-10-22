@@ -22,7 +22,7 @@
 }
 
 .nav-item:hover {
-    color:aqua;
+    color: var(--accent);
 }
 
 .nav-button {
