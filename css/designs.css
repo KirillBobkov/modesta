@@ -2,6 +2,7 @@
   .designs {
     position: relative;
     overflow: hidden;
+    border-radius: 20px;
   }
 
   .design__title {
@@ -52,7 +53,8 @@
 
   .design__image {
     margin: 0 auto;
-    object-fit: contain;
+    width: 100%;
+    object-fit: cover;
   }
 
   .design__prev-button {
