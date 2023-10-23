@@ -53,20 +53,118 @@
 
   .design__image {
     margin: 0 auto;
-    width: 100%;
     object-fit: cover;
+    height: 100%;
   }
 
-  .design__prev-button {
-    position: absolute;
-    top: 50%;
-    left: 30px;
-    background-color: var(--bg-color);
+  .designs .slider__control {
+    display: none;
   }
-  
-  .design__next-button {
+
+  /* стили основного контейнера слайдера */
+  .slider {
+    position: relative;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+  }
+
+  /* стили для обёртки, в которой заключены слайды */
+  .slider__wrapper {
+    position: relative;
+    overflow: hidden;
+  }
+
+  /* стили для контейнера слайдов */
+  .slider__items {
+    display: flex;
+    transition: transform 0.6s ease;
+  }
+
+  /* стили для слайдов */
+  .slider__item {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  /* стили для кнопок "вперед" и "назад" */
+  .slider__control {
     position: absolute;
     top: 50%;
-    right: 30px;
-    background-color: var(--bg-color);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    opacity: 0.5;
+    transform: translateY(-50%);
+  }
+
+  .slider__control_show {
+    display: flex;
+  }
+
+  .slider__control:hover,
+  .slider__control:focus {
+    color: #fff;
+    text-decoration: none;
+    outline: 0;
+    opacity: 0.9;
+  }
+
+  .slider__control_prev {
+    left: 1%;
+    background-size: 80%;
+    background-position: center;
+    transform: translateY(-50%) rotate(-180deg);
+    background-repeat: no-repeat;
+  }
+
+  .slider__control_next {
+    right: 1%;
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position: center;
+  }
+
+  /* стили для индикаторов */
+  .slider__indicators {
+    position: absolute;
+    right: 0;
+    bottom: 10px;
+    left: 0;
+    z-index: 15;
+    display: flex;
+    justify-content: center;
+    padding-left: 0;
+    margin-right: 15%;
+    margin-left: 15%;
+    list-style: none;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .slider__indicators li {
+    box-sizing: content-box;
+    flex: 0 1 auto;
+    width: 30px;
+    height: 4px;
+    margin-right: 3px;
+    margin-left: 3px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.5);
+    background-clip: padding-box;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+  }
+
+  .slider__indicators li.active {
+    background-color: #fff;
+  }
+
+  .img-fluid {
+    display: inline-block;
+    height: auto;
+    max-width: 100%;
   }

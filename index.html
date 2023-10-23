@@ -404,8 +404,9 @@
     <main>
         <div class="container container--full-width">
             <div class="mission">
-                <video class="mission__video" autoplay="autoplay" loop="loop" muted defaultMuted playsinline  oncontextmenu="return false;"  preload="auto"  id="myVideo">
-                    <source  src="img/rotate.mp4" type="video/mp4">
+                <video class="mission__video" autoplay="autoplay" loop="loop" muted defaultMuted playsinline
+                    oncontextmenu="return false;" preload="auto" id="myVideo">
+                    <source src="img/rotate.mp4" type="video/mp4">
                 </video>
                 <div class="mission__title-container">
                     <div class="mission__title">
@@ -478,38 +479,38 @@
 
         <div class="container">
             <h1 class="container__title">Текущая стадия</h1>
-            <section class="designs shadow">
-                <ul class="designs__container" id="designs-container">
-                    <li class="design__item" id="design-item">
-                        <img class="design__image" src="img/design1.png" alt="design__image" />
-                    </li>
-                    <li class="design__item">
-                        <img class="design__image" src="img/design2.png" alt="design__image" />
-                    </li>
-                    <li class="design__item">
-                        <img class="design__image" src="img/design3.png" alt="design__image" />
-                    </li>
-                </ul>
-                <button class="design__prev-button slide-arrow" id="design-prev-button">
-                    <svg part="svg" class="svg" viewBox="0 0 32 32" data-icon-name="arrow-back">
-                        <path
-                            d="M14.667 7.267l1.867 1.867-5.6 5.6h15.2v2.667h-15.067l5.467 5.467-1.867 1.867-8.8-8.8 0.267-0.267 8.533-8.4z">
-                        </path>
-                    </svg>
-                </button>
-                <button class="design__next-button slide-arrow" id="design-next-button">
-                    <svg part="svg" class="svg" viewBox="0 0 32 32" data-icon-name="arrow-action-step">
-                        <path
-                            d="M17.333 24.733l-1.867-1.867 5.6-5.6h-15.2v-2.667h15.067l-5.467-5.467 1.867-1.867 8.8 8.8-0.267 0.267-8.533 8.4z">
-                        </path>
-                    </svg>
-                </button>
-            </section>
+            <div class="slider designs shadow">
+                <div class="slider__wrapper">
+                    <div class="slider__items">
+                        <div class="slider__item">
+                            <img class="design__image" src="img/design1.png" alt="design__image" />
+                        </div>
+                        <div class="slider__item">
+                            <img class="design__image" src="img/design2.png" alt="design__image" />
+                        </div>
+                        <div class="slider__item">
+                            <img class="design__image" src="img/design3.png" alt="design__image" />
+                        </div>
+                    </div>
+                </div>
+                <svg class="slide-arrow slider__control  slider__control_prev" part="svg" class="svg" viewBox="0 0 32 32"
+                    data-icon-name="arrow-action-step">
+                    <path
+                        d="M17.333 24.733l-1.867-1.867 5.6-5.6h-15.2v-2.667h15.067l-5.467-5.467 1.867-1.867 8.8 8.8-0.267 0.267-8.533 8.4z">
+                    </path>
+                </svg>
+                <svg class="slide-arrow slider__control slider__control_next" part="svg" class="svg" viewBox="0 0 32 32"
+                    data-icon-name="arrow-action-step">
+                    <path
+                        d="M17.333 24.733l-1.867-1.867 5.6-5.6h-15.2v-2.667h15.067l-5.467-5.467 1.867-1.867 8.8 8.8-0.267 0.267-8.533 8.4z">
+                    </path>
+                </svg>
+            </div>
         </div>
 
-
         <div class="container container--full-width tech__container--inverted-color">
-            <h1 class="container__title tech__container-title--inverted-color" id="tech">Технические характеристики</h1>
+            <h1 class="container__title tech__container-title--inverted-color" id="tech">Технические характеристики
+            </h1>
             <div class="tech">
                 <div class="tech__item shadow element-animation">
                     <h2 class="tech__number">01</h2>
@@ -522,7 +523,8 @@
                 <div class="tech__item shadow element-animation">
                     <h2 class="tech__number">02</h2>
                     <div class="tech__content">
-                        <span class="tech__text">Дополнительная возможность установки модуля вибротактильной обратной
+                        <span class="tech__text">Дополнительная возможность установки модуля вибротактильной
+                            обратной
                             связи в протез (для пользователей старше 18 лет).
                         </span>
                     </div>
@@ -530,7 +532,8 @@
                 <div class="tech__item shadow element-animation">
                     <h2 class="tech__number">03</h2>
                     <div class="tech__content">
-                        <span class="tech__text">Использование легких, прочных материала в корпусных изделиях и в основе
+                        <span class="tech__text">Использование легких, прочных материала в корпусных изделиях и в
+                            основе
                             конструкции (раме
                             протеза).</span>
                     </div>
@@ -538,7 +541,8 @@
                 <div class="tech__item shadow element-animation">
                     <h2 class="tech__number">04</h2>
                     <div class="tech__content">
-                        <span class="tech__text">Дизайнерское решение, при котором не теряются технологические функции и
+                        <span class="tech__text">Дизайнерское решение, при котором не теряются технологические
+                            функции и
                             остаётся
                             приемлемый облик изделия.</span>
                     </div>
@@ -546,71 +550,72 @@
             </div>
         </div>
 
-
         <div class="container">
             <h1 class="container__title" id="problems">Решаемые проблемы</h1>
-            <section class="problems shadow">
-                <ul class="problem__container" id="problem-container">
-                    <li class="problem" id="problem">
-                        <img class="problem__image" src="img/problem1.png" alt="problem__image" />
-                        <div class="problem__content">
-                            <h2 class="problem__title">Собственное производство</h2>
-                            <span class="problem__description">В России малое количество протезных предприятий.
-                                Мы создание новые и усовершенствуеме существующие изделия, на базе оборудованных
-                                производственных помещений.</span>
+            <section class="slider problems shadow">
+                    <div class="slider__wrapper">
+                        <div class="slider__items">
+                            <li class="slider__item problem" id="problem">
+                                <img class="problem__image" src="img/problem1.png" alt="problem__image" />
+                                <div class="problem__content">
+                                    <h2 class="problem__title">Собственное производство</h2>
+                                    <span class="problem__description">В России малое количество протезных предприятий.
+                                        Мы создание новые и усовершенствуеме существующие изделия, на базе оборудованных
+                                        производственных помещений.</span>
+                                </div>
+                            </li>
+                            <li class="slider__item problem">
+                                <img class="problem__image" src="img/problem2.png" alt="problem__image" />
+                                <div class="problem__content">
+                                    <h2 class="problem__title">Ограниченный функционал
+                                        изделий других компаний
+                                    </h2>
+                                    <span class="problem__description">Через гос. заказ, более 85% продукции реализуется в
+                                        виде
+                                        косметических изделий (неэффективных в быту).
+                                    </span>
+                                </div>
+                            </li>
+                            <li class="slider__item problem">
+                                <img class="problem__image" src="img/problem3.png" alt="problem__image" />
+                                <div class="problem__content">
+                                    <h2 class="problem__title">Несвоевременный ремонт</h2>
+                                    <span class="problem__description">Многие импортные изделия, в условиях санкций,
+                                        обслуживать
+                                        затруднительно (логистика) или
+                                        невозможно. Мы оказываем помощь с ремонтом импортных протезов.
+                                    </span>
+                                </div>
+                            </li>
+                            <li class="slider__item problem">
+                                <img class="problem__image" src="img/problem4.png" alt="problem__image" />
+                                <div class="problem__content">
+                                    <h2 class="problem__title">Непостоянный процесс реабилитации
+                                    </h2>
+                                    <span class="problem__description">Мы проводим постоянную работу с реабилитологами и
+                                        пишем
+                                        индивидуальные программы.
+                                        Осуществляяем создание собственного программного обеспечения для получения обратной
+                                        связи от
+                                        пользователей.
+                                    </span>
+        
+                                </div>
+                            </li>
                         </div>
-
-                    </li>
-                    <li class="problem">
-                        <img class="problem__image" src="img/problem2.png" alt="problem__image" />
-                        <div class="problem__content">
-                            <h2 class="problem__title">Ограниченный функционал
-                                изделий других компаний
-                            </h2>
-                            <span class="problem__description">Через гос. заказ, более 85% продукции реализуется в виде
-                                косметических изделий (неэффективных в быту).
-                            </span>
-                        </div>
-                    </li>
-                    <li class="problem">
-                        <img class="problem__image" src="img/problem3.png" alt="problem__image" />
-                        <div class="problem__content">
-                            <h2 class="problem__title">Несвоевременный ремонт</h2>
-                            <span class="problem__description">Многие импортные изделия, в условиях санкций, обслуживать
-                                затруднительно (логистика) или
-                                невозможно. Мы оказываем помощь с ремонтом импортных протезов.
-                            </span>
-                        </div>
-                    </li>
-                    <li class="problem">
-                        <img class="problem__image" src="img/problem4.png" alt="problem__image" />
-                        <div class="problem__content">
-                            <h2 class="problem__title">Непостоянный процесс реабилитации
-                            </h2>
-                            <span class="problem__description">Мы проводим постоянную работу с реабилитологами и пишем
-                                индивидуальные программы.
-                                Осуществляяем создание собственного программного обеспечения для получения обратной
-                                связи от
-                                пользователей.
-                            </span>
-
-                        </div>
-                    </li>
-                </ul>
-                <button class="problem__prev-button slide-arrow" id="problem-prev-button">
-                    <svg part="svg" class="svg" viewBox="0 0 32 32" data-icon-name="arrow-back">
-                        <path
-                            d="M14.667 7.267l1.867 1.867-5.6 5.6h15.2v2.667h-15.067l5.467 5.467-1.867 1.867-8.8-8.8 0.267-0.267 8.533-8.4z">
-                        </path>
-                    </svg>
-                </button>
-                <button class="problem__next-button slide-arrow" id="problem-next-button">
-                    <svg part="svg" class="svg" viewBox="0 0 32 32" data-icon-name="arrow-action-step">
+                    </div>
+                    <svg class="slide-arrow slider__control  slider__control_prev" part="svg" class="svg" viewBox="0 0 32 32"
+                        data-icon-name="arrow-action-step">
                         <path
                             d="M17.333 24.733l-1.867-1.867 5.6-5.6h-15.2v-2.667h15.067l-5.467-5.467 1.867-1.867 8.8 8.8-0.267 0.267-8.533 8.4z">
                         </path>
                     </svg>
-                </button>
+                    <svg class="slide-arrow slider__control slider__control_next" part="svg" class="svg" viewBox="0 0 32 32"
+                        data-icon-name="arrow-action-step">
+                        <path
+                            d="M17.333 24.733l-1.867-1.867 5.6-5.6h-15.2v-2.667h15.067l-5.467-5.467 1.867-1.867 8.8 8.8-0.267 0.267-8.533 8.4z">
+                        </path>
+                    </svg>
             </section>
         </div>
 
@@ -655,7 +660,8 @@
                     <div class="person__info">
                         <span class="person__name">Абрамов Р.А.</span>
                         <span class="person__bio">2,5 года опыта в проектировании и производстве изделий.
-                            Участие в составе группы Российских специалистов в проведении опытно-экспериментальных работ
+                            Участие в составе группы Российских специалистов в проведении опытно-экспериментальных
+                            работ
                             на
                             территории Ирана/Казахстана. 2021-2022 г.</span>
                         <span class="person__profession">Инженер разработчик протезов</span>
@@ -709,7 +715,8 @@
                     <img class="stay-in-touch__image" src="img/stay_in_touch_image.png" alt="stay-in-touch__img">
                     <div class="stay-in-touch__content">
                         <h2 class="stay-in-touch__title">Будьте в курсе наших новостей</h2>
-                        <span class="stay-in-touch__description">Следите за обновлениями в нашей официальной группе, и
+                        <span class="stay-in-touch__description">Следите за обновлениями в нашей официальной группе,
+                            и
                             станьте одним из первых пользователей</span>
                     </div>
                 </div>
@@ -722,7 +729,11 @@
 
         <div>
             <p class="footer__soc">Наши соц-сети:</p>
-            <a target="_blank" href="https://t.me/laba2kvadrata"><img src="img/telegram.png" class="footerimgTG"></a>
+            <a target="_blank" href="https://t.me/laba2kvadrata">
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 48 48">
+                    <path fill="#29b6f6" d="M24 4A20 20 0 1 0 24 44A20 20 0 1 0 24 4Z"></path><path fill="#fff" d="M33.95,15l-3.746,19.126c0,0-0.161,0.874-1.245,0.874c-0.576,0-0.873-0.274-0.873-0.274l-8.114-6.733 l-3.97-2.001l-5.095-1.355c0,0-0.907-0.262-0.907-1.012c0-0.625,0.933-0.923,0.933-0.923l21.316-8.468 c-0.001-0.001,0.651-0.235,1.126-0.234C33.667,14,34,14.125,34,14.5C34,14.75,33.95,15,33.95,15z"></path><path fill="#b0bec5" d="M23,30.505l-3.426,3.374c0,0-0.149,0.115-0.348,0.12c-0.069,0.002-0.143-0.009-0.219-0.043 l0.964-5.965L23,30.505z"></path><path fill="#cfd8dc" d="M29.897,18.196c-0.169-0.22-0.481-0.26-0.701-0.093L16,26c0,0,2.106,5.892,2.427,6.912 c0.322,1.021,0.58,1.045,0.58,1.045l0.964-5.965l9.832-9.096C30.023,18.729,30.064,18.416,29.897,18.196z"></path>
+                    </svg>
+            </a>
         </div>
 
         <div>
@@ -751,7 +762,6 @@
             </path>
         </svg>
     </button>
-
 </body>
 
 <script>
@@ -766,72 +776,6 @@
     const designNextButton = document.getElementById("design-next-button");
 
     const goUpButton = document.getElementById("go-up-button");
-
-    let timeout = false;
-
-    problemNextButton.addEventListener("click", () => {
-        if (timeout) return;
-        timeout = true;
-        setTimeout(() => {
-            timeout = false;
-        }, 800);
-
-        const problemSlideWidth = problemSlide.clientWidth;
-        if (Math.abs(problemContainer.scrollWidth - problemSlideWidth - problemContainer.scrollLeft) < 20) {
-            problemContainer.scrollLeft = 0;
-        } else {
-            const nextLeft = problemContainer.scrollLeft + problemSlideWidth;
-            problemContainer.scrollLeft = nextLeft;
-        }
-    });
-
-    problemPrevButton.addEventListener("click", () => {
-        if (timeout) return;
-        timeout = true;
-        setTimeout(() => {
-            timeout = false;
-        }, 800);
-
-        const problemSlideWidth = problemSlide.clientWidth;
-        if (problemContainer.scrollLeft === 0) {
-            problemContainer.scrollLeft = problemContainer.scrollWidth;
-        } else {
-            const prevLeft = problemContainer.scrollLeft - problemSlideWidth;
-            problemContainer.scrollLeft = prevLeft;
-        }
-    });
-
-    designNextButton.addEventListener("click", () => {
-        if (timeout) return;
-        timeout = true;
-        setTimeout(() => {
-            timeout = false;
-        }, 800);
-
-        const designSlideWidth = designSlide.clientWidth;
-        if (Math.abs(designContainer.scrollWidth - designSlideWidth - designContainer.scrollLeft) < 20) {
-            designContainer.scrollLeft = 0;
-        } else {
-            const nextLeft = designContainer.scrollLeft + designSlideWidth;
-            designContainer.scrollLeft = nextLeft;
-        }
-    });
-
-    designPrevButton.addEventListener("click", () => {
-        if (timeout) return;
-        timeout = true;
-        setTimeout(() => {
-            timeout = false;
-        }, 800);
-
-        const designSlideWidth = designSlide.clientWidth;
-        if (designContainer.scrollLeft === 0) {
-            designContainer.scrollLeft = designContainer.scrollWidth;
-        } else {
-            const prevLeft = designContainer.scrollLeft - designSlideWidth;
-            designContainer.scrollLeft = prevLeft;
-        }
-    });
 
     document.addEventListener("scroll", (event) => {
         const maxHeight = document.body.scrollHeight - window.innerHeight;
@@ -902,6 +846,229 @@
             document.documentElement.setAttribute("theme", "dark");
             localStorage.setItem('theme', 1);
         }
+    });
+
+    var slideShow = (function () {
+        return function (selector, config) {
+            var
+                _slider = document.querySelector(selector), // основный элемент блока
+                _sliderContainer = _slider.querySelector('.slider__items'), // контейнер для .slider-item
+                _sliderItems = _slider.querySelectorAll('.slider__item'), // коллекция .slider-item
+                _sliderControls = _slider.querySelectorAll('.slider__control'), // элементы управления
+                _currentPosition = 0, // позиция левого активного элемента
+                _transformValue = 0, // значение транфсофрмации .slider_wrapper
+                _transformStep = 100, // величина шага (для трансформации)
+                _itemsArray = [], // массив элементов
+                _timerId,
+                _indicatorItems,
+                _indicatorIndex = 0,
+                _indicatorIndexMax = _sliderItems.length - 1,
+                _stepTouch = 50,
+                _config = {
+                    isAutoplay: false, // автоматическая смена слайдов
+                    directionAutoplay: 'next', // направление смены слайдов
+                    delayAutoplay: 5000, // интервал между автоматической сменой слайдов
+                    isPauseOnHover: true // устанавливать ли паузу при поднесении курсора к слайдеру
+                };
+
+            // настройка конфигурации слайдера в зависимости от полученных ключей
+            for (var key in config) {
+                if (key in _config) {
+                    _config[key] = config[key];
+                }
+            }
+
+            // наполнение массива _itemsArray
+            for (var i = 0, length = _sliderItems.length; i < length; i++) {
+                _itemsArray.push({ item: _sliderItems[i], position: i, transform: 0 });
+            }
+
+            // переменная position содержит методы с помощью которой можно получить минимальный и максимальный индекс элемента, а также соответствующему этому индексу позицию
+            var position = {
+                getItemIndex: function (mode) {
+                    var index = 0;
+                    for (var i = 0, length = _itemsArray.length; i < length; i++) {
+                        if ((_itemsArray[i].position < _itemsArray[index].position && mode === 'min') || (_itemsArray[i].position > _itemsArray[index].position && mode === 'max')) {
+                            index = i;
+                        }
+                    }
+                    return index;
+                },
+                getItemPosition: function (mode) {
+                    return _itemsArray[position.getItemIndex(mode)].position;
+                }
+            };
+
+            // функция, выполняющая смену слайда в указанном направлении
+            var _move = function (direction) {
+                var nextItem, currentIndicator = _indicatorIndex;;
+                if (direction === 'next') {
+                    _currentPosition++;
+                    if (_currentPosition > position.getItemPosition('max')) {
+                        nextItem = position.getItemIndex('min');
+                        _itemsArray[nextItem].position = position.getItemPosition('max') + 1;
+                        _itemsArray[nextItem].transform += _itemsArray.length * 100;
+                        _itemsArray[nextItem].item.style.transform = 'translateX(' + _itemsArray[nextItem].transform + '%)';
+                    }
+                    _transformValue -= _transformStep;
+                    _indicatorIndex = _indicatorIndex + 1;
+                    if (_indicatorIndex > _indicatorIndexMax) {
+                        _indicatorIndex = 0;
+                    }
+                } else {
+                    _currentPosition--;
+                    if (_currentPosition < position.getItemPosition('min')) {
+                        nextItem = position.getItemIndex('max');
+                        _itemsArray[nextItem].position = position.getItemPosition('min') - 1;
+                        _itemsArray[nextItem].transform -= _itemsArray.length * 100;
+                        _itemsArray[nextItem].item.style.transform = 'translateX(' + _itemsArray[nextItem].transform + '%)';
+                    }
+                    _transformValue += _transformStep;
+                    _indicatorIndex = _indicatorIndex - 1;
+                    if (_indicatorIndex < 0) {
+                        _indicatorIndex = _indicatorIndexMax;
+                    }
+                }
+                _sliderContainer.style.transform = 'translateX(' + _transformValue + '%)';
+                _indicatorItems[currentIndicator].classList.remove('active');
+                _indicatorItems[_indicatorIndex].classList.add('active');
+            };
+
+            // функция, осуществляющая переход к слайду по его порядковому номеру
+            var _moveTo = function (index) {
+                var i = 0, direction = (index > _indicatorIndex) ? 'next' : 'prev';
+                while (index !== _indicatorIndex && i <= _indicatorIndexMax) {
+                    _move(direction);
+                    i++;
+                }
+            };
+
+            // функция для запуска автоматической смены слайдов через промежутки времени
+            var _startAutoplay = function () {
+                if (!_config.isAutoplay) {
+                    return;
+                }
+                _stopAutoplay();
+                _timerId = setInterval(function () {
+                    _move(_config.directionAutoplay);
+                }, _config.delayAutoplay);
+            };
+
+            // функция, отключающая автоматическую смену слайдов
+            var _stopAutoplay = function () {
+                clearInterval(_timerId);
+            };
+
+            // функция, добавляющая индикаторы к слайдеру
+            var _addIndicators = function () {
+                var indicatorsContainer = document.createElement('ol');
+                indicatorsContainer.classList.add('slider__indicators');
+                for (var i = 0, length = _sliderItems.length; i < length; i++) {
+                    var sliderIndicatorsItem = document.createElement('li');
+                    if (i === 0) {
+                        sliderIndicatorsItem.classList.add('active');
+                    }
+                    sliderIndicatorsItem.setAttribute("data-slide-to", i);
+                    indicatorsContainer.appendChild(sliderIndicatorsItem);
+                }
+                _slider.appendChild(indicatorsContainer);
+                _indicatorItems = _slider.querySelectorAll('.slider__indicators > li')
+            };
+
+            var _isTouchDevice = function () {
+                return !!('ontouchstart' in window || navigator.maxTouchPoints);
+            };
+
+            // функция, осуществляющая установку обработчиков для событий 
+            var _setUpListeners = function () {
+                var _startX = 0;
+                if (_isTouchDevice()) {
+                    _slider.addEventListener('touchstart', function (e) {
+                        _startX = e.changedTouches[0].clientX;
+                        _startAutoplay();
+                    });
+                    _slider.addEventListener('touchend', function (e) {
+                        var
+                            _endX = e.changedTouches[0].clientX,
+                            _deltaX = _endX - _startX;
+                        if (_deltaX > _stepTouch) {
+                            _move('prev');
+                        } else if (_deltaX < -_stepTouch) {
+                            _move('next');
+                        }
+                        _startAutoplay();
+                    });
+                } else {
+                    for (var i = 0, length = _sliderControls.length; i < length; i++) {
+                        _sliderControls[i].classList.add('slider__control_show');
+                    }
+                }
+                _slider.addEventListener('click', function (e) {
+                    console.log(e);
+
+                    if (e.target.classList.contains('slider__control')) {
+                        e.preventDefault();
+                        _move(e.target.classList.contains('slider__control_next') ? 'next' : 'prev');
+                        _startAutoplay();
+                    } else if (e.target.getAttribute('data-slide-to')) {
+                        e.preventDefault();
+                        _moveTo(parseInt(e.target.getAttribute('data-slide-to')));
+                        _startAutoplay();
+                    }
+                });
+                document.addEventListener('visibilitychange', function () {
+                    if (document.visibilityState === "hidden") {
+                        _stopAutoplay();
+                    } else {
+                        _startAutoplay();
+                    }
+                }, false);
+                if (_config.isPauseOnHover && _config.isAutoplay) {
+                    _slider.addEventListener('mouseenter', function () {
+                        _stopAutoplay();
+                    });
+                    _slider.addEventListener('mouseleave', function () {
+                        _startAutoplay();
+                    });
+                }
+            };
+
+            // добавляем индикаторы к слайдеру
+            _addIndicators();
+            // установливаем обработчики для событий
+            _setUpListeners();
+            // запускаем автоматическую смену слайдов, если установлен соответствующий ключ
+            _startAutoplay();
+
+            return {
+                // метод слайдера для перехода к следующему слайду
+                next: function () {
+                    _move('next');
+                },
+                // метод слайдера для перехода к предыдущему слайду          
+                left: function () {
+                    _move('prev');
+                },
+                // метод отключающий автоматическую смену слайдов
+                stop: function () {
+                    _config.isAutoplay = false;
+                    _stopAutoplay();
+                },
+                // метод запускающий автоматическую смену слайдов
+                cycle: function () {
+                    _config.isAutoplay = true;
+                    _startAutoplay();
+                }
+            }
+        }
+    }());
+
+    slideShow('.slider.designs', {
+        isAutoplay: false
+    });
+
+    slideShow('.slider.problems', {
+        isAutoplay: false
     });
 </script>
 
