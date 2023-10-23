@@ -47,6 +47,10 @@
 }
 
 @media screen and (max-width: 768px) {
+    .mission__video {
+        object-position: top right;
+        height: 400px;
+    }
     .mission__title {
         padding: 0 20px;
     }
