@@ -28,7 +28,7 @@
 
 .tech__text {
     font-size: 18px;
-    line-height: 32px;
+    line-height: 28px;
 }
 
 .tech__number {
@@ -48,4 +48,34 @@
 
 .tech__item:nth-child(odd) {
     margin: 0 0 10px auto;
+}
+
+@media screen and (max-width: 768px) {
+    .tech {
+        background-image: url(../img/tech_background.png);
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        background-size: 40%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+    }  
+
+    .tech__container--inverted-color {
+        padding: 40px 0;
+    }
+    
+    
+    .tech__item:nth-child(n){
+        width: 100%;
+        margin-bottom: 20px;
+        border-radius: 20px;
+        padding: 20px;
+    }
+
+    .tech__number {
+        font-size: 48px;
+        line-height: 52px;
+        flex: 20%;
+    }    
 }

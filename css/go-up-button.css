@@ -1,0 +1,36 @@
+.go-up-button {
+    transform: rotate(-90deg);
+    position: fixed;
+    visibility: hidden;
+    bottom: 30px;
+    right: 30px;
+    display: flex;
+    margin: auto;
+    height: 80px;
+    border: none;
+    width: 80px;
+    padding: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 100ms;
+    border-radius: 50%;
+    color: var(--font-color);
+    fill:  var(--font-color);
+    background-color: var(--card-bg-color);
+    transition: all 500ms ease-out;
+    opacity: 0;
+}
+
+.go-up-button--visible {
+    visibility: visible;
+    opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+    .go-up-button {
+        height: 50px;
+        width: 50px;
+        bottom: 20px;
+        right: 20px;
+    }
+}

@@ -1,14 +1,13 @@
 .history {
     display: flex;
-    width: 800px;
     margin: 0 auto;
 }
 
 .history__content {
-    width: 100;
+    width: 100%;
     font-size: 18px;
-    line-height: 32px;
-    padding: 40px 0;
+    line-height: 28px;
+    padding: 40px 80px;
 }
 
 .history__title {
@@ -20,5 +19,19 @@
 }
 
 .history__description {
-    text-align:  justify;
+    text-align: justify;
+}
+
+@media screen and (max-width: 768px) {
+    .history__title {
+        width: 100%;
+        font-size: 38px;
+        line-height: 42px;
+        margin-bottom: 20px;
+        text-align: left;
+    }
+
+    .history__content {
+        padding: 40px 0;
+    }
 }

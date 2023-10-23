@@ -4,9 +4,13 @@
   }
   
   .toggle-theme {
+    display: flex;
+  }
+
+  .toggle-theme__container {
+    display: flex;
     margin-left: 40px;
     margin-right: 10px;
-    display: flex;
   }
 
   .checkbox-label {
@@ -53,3 +57,11 @@
   .hide {
     display: none;
   }
+
+  @media screen and (max-width: 998px) {
+    .toggle-theme {
+      position: absolute;
+      top: 0;
+      right: 20px;
+    }
+}

@@ -28,7 +28,7 @@
     max-width: 400px;
     vertical-align: middle;
     font-size: 18px;
-    line-height: 32px;
+    line-height: 28px;
 }
 
 .advantages__item--right {
@@ -45,27 +45,40 @@
 .advantage__item--1-background {
     background-image: url(../img/advantage_1.png);
     background-repeat: no-repeat;
-    background-position: 0% center;
+    background-position: 0% bottom;
     background-size: 60%;
 }
 
 .advantage__item--2-background {
     background-image: url(../img/advantage_2.png);
     background-repeat: no-repeat;
-    background-position: 100% center;
+    background-position: 100% bottom;
     background-size: 60%;
 }
 
 .advantage__item--3-background {
     background-image: url(../img/advantage_3.png);
     background-repeat: no-repeat;
-    background-position: 0% center;
+    background-position: 0% bottom;
     background-size: 60%;
 }
 
 .advantage__item--4-background {
     background-image: url(../img/advantage_4.png);
     background-repeat: no-repeat;
-    background-position: 100% center;
+    background-position: 100% bottom;
     background-size: 60%;
+}
+
+@media screen and (max-width: 768px) {
+    .advantages__item {
+        min-height: 150px;
+        padding: 20px;
+        margin-bottom: 20px;
+        border-radius: 20px;
+    }
+
+    .advantages__item-text {
+        max-width: 150px;
+    }
 }
