@@ -102,10 +102,12 @@
       width: 100%;
       height: auto;
       padding: 20px;
+      padding-bottom: 30px;
     }
 
     .problems .slider__indicators {
       left: 0;
+      bottom: 10px;
       margin-right: auto;
       margin-left: auto;
     }
