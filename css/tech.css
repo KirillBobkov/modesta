@@ -58,7 +58,7 @@
         background-size: 40%;
         max-width: 1200px;
         margin: 0 auto;
-        padding: 20px;
+        padding: 10px;
     }  
 
     .tech__container--inverted-color {
@@ -78,4 +78,9 @@
         line-height: 52px;
         flex: 20%;
     }    
+
+    .tech__text {
+        font-size: 14px;
+        line-height: 20px;
+    }
 }

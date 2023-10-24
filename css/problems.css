@@ -94,7 +94,7 @@
 
     .problem__title {
       font-size: 32px;
-      line-height: 38px;
+      line-height: 36px;
       margin-bottom: 20px;
     }
 
@@ -108,5 +108,10 @@
       left: 0;
       margin-right: auto;
       margin-left: auto;
+    }
+
+    .problem__description {
+      font-size: 14px;
+      line-height: 20px;
     }
   }

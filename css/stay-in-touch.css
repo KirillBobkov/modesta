@@ -69,12 +69,17 @@
 
     .stay-in-touch__title {
         font-size: 32px;
-        line-height: 48px;
+        line-height: 36px;
         margin-bottom: 20px;
     }
 
     .stay-in-touch__image {
         width: 100%;
         height: auto;
+    }
+
+    .stay-in-touch__description {
+        font-size: 14px;
+        line-height: 20px;
     }
 }
