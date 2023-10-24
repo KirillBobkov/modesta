@@ -39,11 +39,12 @@
 .mission__main-line {
     font-size: 38px;
     line-height: 42px;
+    margin-bottom: 20px;
 }
 
 .mission__secondary-line {
-    font-size: 24px;
-    line-height: 36px;
+    font-size: 18px;
+    line-height: 32px;
 }
 
 @media screen and (max-width: 768px) {
@@ -54,5 +55,15 @@
     
     .mission__title {
         padding: 0 20px;
+    }
+
+    .mission__main-line {
+        font-size: 38px;
+        line-height: 42px;
+    }
+
+    .mission__secondary-line {
+        font-size: 14px;
+        line-height: 20px;
     }
 }
