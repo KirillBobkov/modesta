@@ -851,7 +851,6 @@
     function onEntry(entry) {
         entry.forEach(change => {
             if (change.isIntersecting) {
-                console.log(change.isIntersecting);
                 change.target.classList.add('element-show');
             }
         });
@@ -1026,8 +1025,6 @@
                     }
                 }
                 _slider.addEventListener('click', function (e) {
-                    console.log(e);
-
                     if (e.target.classList.contains('slider__control')) {
                         e.preventDefault();
                         _move(e.target.classList.contains('slider__control_next') ? 'next' : 'prev');
