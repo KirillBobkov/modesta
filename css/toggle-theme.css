@@ -15,8 +15,8 @@
 
   .checkbox-label {
     background-color: #111;
-    width: 50px;
-    height: 26px;
+    width: 46px;
+    height: 22px;
     border-radius: 50px;
     position: relative;
     padding: 5px;
@@ -32,8 +32,8 @@
   
   .checkbox-label .ball {
     background-color: #fff;
-    width: 22px;
-    height: 22px;
+    width: 18px;
+    height: 18px;
     position: absolute;
     left: 2px;
     top: 2px;
@@ -60,8 +60,12 @@
 
   @media screen and (max-width: 998px) {
     .toggle-theme {
-      position: absolute;
-      top: 0;
-      right: 20px;
+      position: static;
+    }
+
+    .toggle-theme__container {
+      display: flex;
+      margin-left: 0;
+      margin-right: 10px;
     }
 }
