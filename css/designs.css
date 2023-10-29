@@ -137,6 +137,7 @@
       z-index: 15;
       display: flex;
       justify-content: center;
+      align-items: center;
       padding-left: 0;
       margin-right: 15%;
       margin-left: 15%;
@@ -148,10 +149,10 @@
     .slider__indicators li {
       box-sizing: content-box;
       flex: 0 1 auto;
-      width: 12px;
-      height: 12px;
-      margin-right: 3px;
-      margin-left: 3px;
+      width: 8px;
+      height: 8px;
+      margin-right: 5px;
+      margin-left: 5px;
       border-radius: 50%;
       text-indent: -999px;
       cursor: pointer;
@@ -159,10 +160,13 @@
       background-clip: padding-box;
       border-top: 10px solid transparent;
       border-bottom: 10px solid transparent;
+      transition: all 200ms ease-in-out;
     }
 
     .slider__indicators li.active {
       background-color: #fff;
+      width: 12px;
+      height: 12px;
     }
 
     .img-fluid {
