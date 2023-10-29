@@ -42,6 +42,10 @@ body {
     padding: 0;
 }
 
+.container--without-bottom {
+    margin-bottom: 0;
+}
+
 .container__title {
     text-align: center;
     font-size: 48px;
