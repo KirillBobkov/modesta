@@ -1,6 +1,5 @@
     .designs {
       position: relative;
-      overflow: hidden;
       border-radius: 20px;
       margin-bottom: 150px;
     }
@@ -65,16 +64,15 @@
     /* стили основного контейнера слайдера */
     .slider {
       position: relative;
-      overflow: hidden;
       margin-left: auto;
       margin-right: auto;
-      border-radius: 20px;
     }
 
     /* стили для обёртки, в которой заключены слайды */
     .slider__wrapper {
       position: relative;
       overflow: hidden;
+      border-radius: 20px;
     }
 
     /* стили для контейнера слайдов */
@@ -132,7 +130,7 @@
     .slider__indicators {
       position: absolute;
       right: 0;
-      bottom: 10px;
+      bottom: -40px;
       left: 0;
       z-index: 2;
       display: flex;
