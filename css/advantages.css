@@ -41,7 +41,7 @@
 .advantage__item--1-background {
     background-image: url(../img/advantage_1.png);
     background-repeat: no-repeat;
-    background-position: 0% center;
+    background-position: -10% center;
     background-size: 60%;
 }
 
@@ -52,7 +52,7 @@
 .advantage__item--2-background {
     background-image: url(../img/advantage_2.png);
     background-repeat: no-repeat;
-    background-position: 150% center;
+    background-position: 170% center;
     background-size: 80%;
 }
 
