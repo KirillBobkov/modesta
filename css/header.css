@@ -126,6 +126,7 @@
     .active ~ .burger-menu {
         position: fixed;
         top: 20px;
+        right: 20px;
     }
 
     .burger-menu__button {

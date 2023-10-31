@@ -16,10 +16,6 @@
     background-size: 60%;
 }
 
-.advantages__item:hover {
-    background-size: 62%;
-}
-
 .advantages__item:last-child {
     margin-bottom: 0;
 }
@@ -45,29 +41,45 @@
 .advantage__item--1-background {
     background-image: url(../img/advantage_1.png);
     background-repeat: no-repeat;
-    background-position: 0% bottom;
+    background-position: 0% center;
     background-size: 60%;
+}
+
+.advantage__item--1-background:hover {
+    background-size: 62%;
 }
 
 .advantage__item--2-background {
     background-image: url(../img/advantage_2.png);
     background-repeat: no-repeat;
-    background-position: 100% bottom;
-    background-size: 60%;
+    background-position: 150% center;
+    background-size: 80%;
+}
+
+.advantage__item--2-background:hover {
+    background-size: 82%;
 }
 
 .advantage__item--3-background {
     background-image: url(../img/advantage_3.png);
     background-repeat: no-repeat;
-    background-position: 0% bottom;
-    background-size: 60%;
+    background-position: -20% 30%;
+    background-size: 70%;
+}
+
+.advantage__item--3-background:hover {
+    background-size: 72%;
 }
 
 .advantage__item--4-background {
     background-image: url(../img/advantage_4.png);
     background-repeat: no-repeat;
-    background-position: 100% bottom;
-    background-size: 60%;
+    background-position: 120% center;
+    background-size: 70%;
+}
+
+.advantage__item--4-background:hover {
+    background-size: 72%;
 }
 
 @media screen and (max-width: 768px) {

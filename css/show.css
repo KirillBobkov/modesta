@@ -1,10 +1,32 @@
-  .element-animation {
+  .element-animation.element-animation--left {
+      opacity: 0;
+      transform: translateX(-20px);
+  }
+
+  .element-animation.element-animation--left.element-show {
+      opacity: 1;
+      transition: all 1.5s;
+      transform: translateX(0%);
+  }
+
+  .element-animation.element-animation--bottom {
       opacity: 0;
       transform: translateY(20px);
   }
 
-  .element-animation.element-show {
+  .element-animation.element-animation--bottom.element-show {
       opacity: 1;
       transition: all 1.5s;
       transform: translateY(0%);
   }
+
+  .element-animation.element-animation--right {
+    opacity: 0;
+    transform: translateX(20px);
+}
+
+.element-animation.element-animation--right.element-show {
+    opacity: 1;
+    transition: all 1.5s;
+    transform: translateX(0%);
+}
