@@ -74,6 +74,9 @@
 
     .footer__soc a {
         display: inline-block;
+    }
+
+    .footer__soc {
         text-align: center;
     }
 }
