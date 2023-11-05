@@ -5,7 +5,7 @@
 
   .element-animation.element-animation--left.element-show {
       opacity: 1;
-      transition: scale, 1.5s, transform 1.5s, opacity 1.5s;
+      transition: scale 1.5s, transform 1.5s, opacity 1.5s;
       transform: translateX(0%);
   }
 
@@ -16,7 +16,7 @@
 
   .element-animation.element-animation--bottom.element-show {
       opacity: 1;
-      transition: scale, 1.5s, transform 1.5s, opacity 1.5s;
+      transition: scale 1.5s, transform 1.5s, opacity 1.5s;
       transform: translateY(0%);
   }
 
@@ -27,6 +27,6 @@
 
 .element-animation.element-animation--right.element-show {
     opacity: 1;
-    transition:  scale, 1.5s, transform 1.5s, opacity 1.5s;
+    transition:  scale 1.5s, transform 1.5s, opacity 1.5s;
     transform: translateX(0%);
 }

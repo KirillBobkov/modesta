@@ -26,6 +26,10 @@ body {
     position: relative;
 }
 
+.main {
+    background-color: var(--bg-color);
+}
+
 .overflow {
     overflow: hidden;
 }

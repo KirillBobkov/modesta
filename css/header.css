@@ -92,9 +92,8 @@
 }
 
 .header__logo svg path {
-    fill: #ffffff; !important;
+    fill: #ffffff !important;
 }
-
 
 @media screen and (max-width: 998px) {
     .header {
