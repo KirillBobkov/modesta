@@ -75,6 +75,10 @@ main {
     .container--full-width {
         padding: 0;
     }
+
+    .container--without-bottom {
+        margin-bottom: 0;
+    }
 }
 
 .shadow {
