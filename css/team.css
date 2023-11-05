@@ -67,10 +67,6 @@
         min-height: auto;
     }
 
-    .person__avatar {
-        bottom: -20%;
-    }
-
     .person__name {
         font-size: 28px;
         line-height: 32px;
