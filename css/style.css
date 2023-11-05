@@ -26,7 +26,7 @@ body {
     position: relative;
 }
 
-.main {
+main {
     background-color: var(--bg-color);
 }
 
