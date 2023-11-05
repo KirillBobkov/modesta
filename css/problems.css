@@ -1,6 +1,5 @@
   .problems {
     position: relative;
-    overflow: hidden;
     border-radius: 20px;
   }
 
@@ -71,8 +70,13 @@
     opacity: 1;
   }
 
-  .problems .slider__control {
-    display: none;
+  .problems .slider__control--prev {
+    left: -40px;
+    transform: translateY(-50%) rotate(180deg);
+  }
+
+  .problems .slider__control--next {
+    right: -40px;
   }
 
   .problems .slider__indicators {

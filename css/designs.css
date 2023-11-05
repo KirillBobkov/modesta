@@ -57,10 +57,6 @@
       width: 100%;
     }
 
-    .designs .slider__control {
-      display: none;
-    }
-
     /* стили основного контейнера слайдера */
     .slider {
       position: relative;
@@ -173,6 +169,15 @@
       display: inline-block;
       height: auto;
       max-width: 100%;
+    }
+
+    .designs .slider__control--prev {
+      left: -40px;
+      transform: translateY(-50%) rotate(180deg);
+    }
+  
+    .designs .slider__control--next {
+      right: -40px;
     }
 
     @media screen and (max-width: 768px) {

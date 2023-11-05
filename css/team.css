@@ -8,10 +8,10 @@
 
 .person {
     width: 550px;
-    min-height: 293px;
+    min-height: 190px;
     border-radius: 20px;
-    padding: 30px;
-    padding-left: 20%;    
+    padding: 20px;
+    padding-left: 20%;
     background-color: var(--card-bg-color);
     display: flex;
     align-items: flex-start;
@@ -21,21 +21,22 @@
 }
 
 .person__avatar {
-    width: 60%;
+    width: 39%;
     height: auto;
     object-fit: cover;
     align-self: baseline;
     position: absolute;
-    bottom: -20%;
-    left: -7%;
+    left: 0;
+    bottom: -10%;
 }
 
 .person__info {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: end;
+    justify-content: space-between;
     flex-wrap: nowrap;
+    height: 100%;
+    ;
 }
 
 .person__name {
@@ -47,7 +48,6 @@
 }
 
 .person__bio {
-    margin-bottom: 20px;
     font-size: 12px;
     line-height: 18px;
     text-align: right;
@@ -55,19 +55,34 @@
 }
 
 .person__profession {
+    font-size: 16px;
+    line-height: 20px;
     text-align: right;
     width: 100%;
+    margin-bottom: 20px;
 }
 
 @media screen and (max-width: 768px) {
+    .person {
+        min-height: auto;
+    }
+
+    .person__avatar {
+        bottom: -20%;
+    }
+
     .person__name {
         font-size: 28px;
         line-height: 32px;
     }
 
+    .person__profession {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
     .person {
-        padding: 20px;
-        padding-left: 20%;    
-        min-height: 270px;
+        padding: 15px;
+        padding-left: 30%;
     }
 }
