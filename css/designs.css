@@ -2,6 +2,7 @@
       position: relative;
       border-radius: 20px;
       margin-bottom: 150px;
+      height: 500px;
     }
 
     .design__title {
@@ -18,36 +19,6 @@
       display: flex;
       overflow: hidden;
       background-color: var(--bg-color-3);
-    }
-
-    .designs__container {
-      height: 500px;
-      width: 100%;
-      display: flex;
-      overflow-x: scroll;
-      overflow-y: hidden;
-      scroll-behavior: smooth;
-      list-style: none;
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      scrollbar-color: transparent;
-      scrollbar-width: none;
-      -ms-overflow-style: none;
-    }
-
-    .designs__container::-webkit-scrollbar {
-      display: none;
-      width: 0;
-    }
-
-    .designs__container::-webkit-scrollbar-track {
-      background: transparent;
-    }
-
-    .designs__container::-webkit-scrollbar-thumb {
-      background: transparent;
-      border: none;
     }
 
     .design__image {
@@ -69,12 +40,14 @@
       position: relative;
       overflow: hidden;
       border-radius: 20px;
+      height: 100%;
     }
 
     /* стили для контейнера слайдов */
     .slider__items {
       display: flex;
       transition: transform 0.6s ease;
+      height: 100%;
     }
 
     /* стили для слайдов */
@@ -183,6 +156,6 @@
     @media screen and (max-width: 768px) {
       .designs {
         margin-bottom: 100px;
+        height: 300px;
       }
-
     }
