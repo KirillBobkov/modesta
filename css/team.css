@@ -11,24 +11,24 @@
     min-height: 170px;
     border-radius: 20px;
     padding: 0;
-    background-color: var(--card-bg-color);
     display: flex;
     justify-content: space-between;
-    align-items: stretch;
+    align-items: center;
     position: relative;
     overflow: hidden;
 }
 
 .person__avatar-container {
     display: flex;
-    background-color: var(--card-bg-color-2);
     width: 36%;
 }
 
 .person__avatar {
     width: 100%;
+    border-radius: 50%;
+    overflow: hidden;
     background-color: var(--card-bg-color-2);
-    align-self: flex-end;
+    align-self: center;
 }
 
 .person__info {
