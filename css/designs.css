@@ -158,4 +158,8 @@
         margin-bottom: 100px;
         height: 300px;
       }
+
+      .slider__control_show {
+        display: none;
+      }
     }

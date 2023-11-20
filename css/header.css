@@ -85,6 +85,17 @@
     user-select: none;
 }
 
+.header__logo-container  {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.nav img  {
+    margin-right: 13px;
+}
+
+
 .header__logo svg {
     height: 94px;
 }
