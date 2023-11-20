@@ -129,7 +129,10 @@
     }
 
     .header__mobile-logo {
-        display: block;
+        display: flex;
+        align-items: center;
+        color: #ffffff;
+        font-weight: bold;
     }
 
     .header__nav-item--external {
