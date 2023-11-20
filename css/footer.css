@@ -64,12 +64,9 @@
     margin-bottom: 10px;
 }
 
-.footer__address {
-    margin-bottom: 20px;
-}
-
 .footer__map {
     border-radius: 20px;
+    margin-bottom: 20px;
 }
 
 @media screen and (max-width: 968px) {
