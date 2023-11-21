@@ -2,10 +2,19 @@
 <html lang="ru">
 
 <head>
-    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/png" href="img/logo.svg">
-    <title>Модеста</title>
+    <title>МОДЕСТА</title>
+    <meta name="description" content="МОДЕСТА разрабатывает протезы для предплечья и кисти. Мы ориентируемся на данные типы травм, так как видим, что можем решить техническую задачу компенсации таких утраченных функций, как схват и удержание объектов, с определенной силой.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://modesta.tech">
+    <meta property="og:title" content="МОДЕСТА">
+    <meta property="og:description" content="МОДЕСТА разрабатывает протезы для предплечья и кисти. Мы ориентируемся на данные типы травм, так как видим, что можем решить техническую задачу компенсации таких утраченных функций, как схват и удержание объектов, с определенной силой.">
+    <meta property="og:image" content="https://modesta.tech/img/advantage_1.png">
+    <meta name="robots" content="index,follow">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="keywords" content="протезы разработка травма рука предплечье дизайн сколково курган модеста реабилитация протезирование">
+
     <link href="css/colors_2.css" rel="stylesheet">
     <link href="css/reset.css" rel="stylesheet">
     <link href="css/fonts.css" rel="stylesheet">
@@ -30,9 +39,8 @@
         <div class="container container--without-bottom">
             <div class="header__row">
                 <div class="header__logo">
-                    <?xml version="1.0" encoding="UTF-8"?>
-                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="150px"
-                        height="122px" viewBox="0 0 150 122" version="1.1">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="150"
+                        height="122" viewBox="0 0 150 122" version="1.1">
                         <defs>
                             <filter id="alpha" filterUnits="objectBoundingBox" x="0%" y="0%" width="100%" height="100%">
                                 <feColorMatrix type="matrix" in="SourceGraphic"
@@ -522,14 +530,14 @@
                             <use xlink:href="#surface98" mask="url(#mask31)" />
                         </g>
                     </svg>
-                    <a  target="_blank" href="https://navigator.sk.ru/orn/1125414" class="header__mobile-logo">
-                        <img width="30px" src="img/sk_participant.png" class="header__imgSK">
+                    <a target="_blank" href="https://navigator.sk.ru/orn/1125414" class="header__mobile-logo">
+                        <img width="30" src="img/sk_participant.png" class="header__imgSK" alt="Логотип участника Сколково">
                         <span>Участник</span>
                     </a>
                 </div>
-                <div class="nav">
+                <nav class="nav">
                     <a  target="_blank" href="https://navigator.sk.ru/orn/1125414" class="header__nav-item header__nav-item--external">
-                        <img width="30px" src="img/sk_participant.png" class="header__imgSK">
+                        <img width="30" src="img/sk_participant.png" class="header__imgSK" alt="Логотип участника Сколково">
                         <span>Участник</span>
                     </a>
                     <a class="header__nav-item" href="#history" onclick="toogleHeader()">О нас</a>
@@ -539,20 +547,20 @@
                     <a class="header__nav-button header__nav-button--disabled"
                         title="На данный момент протез в разработке, скоро будет доступен для получения"> Заполнить
                         анкету </a>
-                </div>
-                <div class="burger-menu">
-                    <div class="burger-menu__button">
+                </nav>
+                <button class="burger-menu">
+                    <p class="burger-menu__button">
                         <span></span>
                         <span></span>
                         <span></span>
-                    </div>
-                </div>
+                    </p>
+                </button>
             </div>
 
             <div class="header__title-container">
                 <div class="header__title element-animation element-animation--left">
-                    <p class="header__main-line">МОДЕСТА 1.0
-                    </p>
+                    <h1 class="header__main-line">МОДЕСТА 1.0
+                    </h1>
                     <p class="header__secondary-line">Не рука человека, а эффективный инструмент.
                     </p>
                 </div>
@@ -566,10 +574,10 @@
 
 
     <main>
-        <div class="container">
+        <section class="container">
             <div class="history" id="history">
                 <div class="history__content">
-                    <h1 class="history__title element-animation element-animation--bottom">Мы, компания “МОДЕСТА”</h1>
+                    <h2 class="history__title element-animation element-animation--bottom">Мы, компания “МОДЕСТА”</h2>
                     <p class="history__description element-animation element-animation--bottom">
                         Разрабатываем протезы верхних конечностей тягового и биоэлектрического типа, не похожих на руку
                         человека. Решаем проблемы недостатка функционала, силы хвата, долговечности протеза, а также
@@ -578,10 +586,10 @@
                     </p>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <div class="container">
-            <h1 class="container__title" id="advantages">Наши преимущества</h1>
+        <section class="container">
+            <h2 class="container__title" id="advantages">Наши преимущества</h2>
             <ul class="advantages">
                 <li
                     class="element-animation element-animation--bottom advantages__item advantages__item--medium-light-gray advantages__item--right advantage__item--1-background shadow">
@@ -608,90 +616,90 @@
                         быту, а наши специалисты помогут в обучении, подготовив индивидуальную программу.</p>
                 </li>
             </ul>
-        </div>
+        </section>
 
-        <div class="container container--full-width replacement-parts__container">
+        <section class="container container--full-width replacement-parts__container">
             <div class="replacement-parts" id="replacement-parts">
-                <h1 class="replacement-parts__title element-animation element-animation--left">Создай свой стиль.</h1>
+                <h2 class="replacement-parts__title element-animation element-animation--left">Создай свой стиль.</h2>
                 <div class="envelope">
-                    <div class="acesories">
-                        <div class="askolenada askolenada--1" style="--delay:-1;">
-                        </div>
-                        <div class="askolenada askolenada--2" style="--delay:0;">
-                        </div>
-                        <div class="askolenada askolenada--3" style="--delay:1;">
-                        </div>
-                        <div class="askolenada askolenada--4" style="--delay:2;">
-                        </div>
-                        <div class="askolenada askolenada--5" style="--delay:2;">
-                        </div>
-                    </div>
+                    <ul class="acesories">
+                        <li class="askolenada askolenada--1" style="--delay:-1;">
+                        </li>
+                        <li class="askolenada askolenada--2" style="--delay:0;">
+                        </li>
+                        <li class="askolenada askolenada--3" style="--delay:1;">
+                        </li>
+                        <li class="askolenada askolenada--4" style="--delay:2;">
+                        </li>
+                        <li class="askolenada askolenada--5" style="--delay:2;">
+                        </li>
+                    </ul>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <div class="container container--full-width">
-            <h1 class="container__title" id="tech">Технические характеристики
-            </h1>
-            <div class="tech">
-                <div class="tech__item shadow element-animation element-animation--bottom">
+        <section class="container container--full-width">
+            <h2 class="container__title" id="tech">Технические характеристики
+            </h2>
+            <ul class="tech">
+                <li class="tech__item shadow element-animation element-animation--bottom">
                     <div class="tech__content">
                         <span class="tech__text">Максимальная ширина раскрытия хвата <br><span
                                 class="tech__key-feature">11</span> см</span>
                     </div>
-                </div>
-                <div class="tech__item shadow element-animation element-animation--bottom">
+                </li>
+                <li class="tech__item shadow element-animation element-animation--bottom">
                     <div class="tech__content">
                         <span class="tech__text">Вес кисти — не более <br><span class="tech__key-feature">109</span>
                             грамм
 
                         </span>
                     </div>
-                </div>
-                <div class="tech__item shadow element-animation element-animation--bottom">
+                </li>
+                <li class="tech__item shadow element-animation element-animation--bottom">
                     <div class="tech__content">
                         <span class="tech__text">Тяговый протез выдержит силу хвата свыше <br><span
                                 class="tech__key-feature">25</span> кг</span>
                     </div>
-                </div>
-                <div class="tech__item shadow element-animation element-animation--bottom">
+                </li>
+                <li class="tech__item shadow element-animation element-animation--bottom">
                     <div class="tech__content">
                         <span class="tech__text">Угол ротации (вращения) устройства<br><span
                                 class="tech__key-feature">30°</span></span>
                     </div>
-                </div>
-            </div>
-        </div>
+                </li>
+            </ul>
+        </section>
 
-        <div class="container">
-            <h1 class="container__title" id="problems">Решаемые проблемы</h1>
-            <section class="slider problems shadow element-animation element-animation--bottom">
+        <section class="container">
+            <h2 class="container__title" id="problems">Решаемые проблемы</h2>
+            <div class="slider problems shadow element-animation element-animation--bottom">
                 <div class="slider__wrapper">
-                    <div class="slider__items">
+                    <ul class="slider__items">
                         <li class="slider__item problem" id="problem">
-                            <img class="problem__image" src="img/problem1.png" alt="problem__image" />
+                            <img class="problem__image" src="img/problem1.png" alt="problem__image">
                             <div class="problem__content">
-                                <h2 class="problem__title">Собственное производство</h2>
+                                <h3 class="problem__title">Собственное производство</h3>
                                 <p class="problem__description">В России не достаточно протезных предприятий. Мы создаём
                                     новые и совершенствуем существующие изделия, на базе оборудованных производственных
                                     помещений.</p>
                             </div>
                         </li>
                         <li class="slider__item problem">
-                            <img class="problem__image" src="img/problem2.png" alt="problem__image" />
+                            <img class="problem__image" src="img/problem2.png" alt="problem__image">
                             <div class="problem__content">
-                                <h2 class="problem__title">Ограниченный функционал
+                                <h3 class="problem__title">Ограниченный функционал
                                     изделий других компаний
-                                </h2>
+                                </h3>
                                 <p class="problem__description">Через гос. заказ, более 85% продукции реализуется в виде
                                     косметических изделий (неэффективных).
                                 </p>
                             </div>
                         </li>
                         <li class="slider__item problem">
-                            <img class="problem__image" src="img/problem3.png" alt="problem__image" />
+                            <img class="problem__image" src="img/problem3.png" alt="problem__image">
                             <div class="problem__content">
-                                <h2 class="problem__title">Своевременное обслуживание</h2>
+                                <h3 class="problem__title">Своевременное обслуживание</h3>
                                 <p class="problem__description">Многие импортные изделия, в условиях санкций,
                                     обслуживать затруднительно (логистика) или невозможно. Мы создаём сервис для
                                     оперативного обслуживания наших протезов.
@@ -699,10 +707,10 @@
                             </div>
                         </li>
                         <li class="slider__item problem">
-                            <img class="problem__image" src="img/problem4.png" alt="problem__image" />
+                            <img class="problem__image" src="img/problem4.png" alt="problem__image">
                             <div class="problem__content">
-                                <h2 class="problem__title">Процесс реабилитации
-                                </h2>
+                                <h3 class="problem__title">Процесс реабилитации
+                                </h3>
                                 <p class="problem__description">Постоянная работа протезируемого с реабилитологами для
                                     создания индивидуальных программ реабилитации. Осуществляем собственное программное
                                     обеспечение для получения непрерывной обратной связи от пользователей в реальном
@@ -710,64 +718,65 @@
                                 </p>
                             </div>
                         </li>
-                    </div>
+                    </ul>
                 </div>
-                <div class="slide-arrow slider__control slider__control--prev">
-                </div>
-                <div class="slide-arrow slider__control slider__control--next">
-                </div>
-            </section>
-        </div>
+                <button class="slide-arrow slider__control slider__control--prev">
+                </button>
+                <button class="slide-arrow slider__control slider__control--next">
+                </button>
+            </div>
+        </section>
 
-        <div class="container container--full-width">
-            <h1 class="container__title" id="video">Видео</h1>
+        <section class="container container--full-width">
+            <h2 class="container__title" id="video">Видео</h2>
             <div class="video shadow">
                 <iframe class="video__frame" src="https://www.youtube.com/embed/P9LcOcSTg1Q?si=52425-Zg5j3g7TuZ"
-                    title="YouTube video player" frameborder="0"
+                    title="YouTube video player"
+                    style="border: none;"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     allowfullscreen></iframe>
             </div>
-        </div>
+        </section>
 
 
-        <div class="container">
-            <h1 class="container__title">Процесс разработки</h1>
+        <section class="container">
+            <h2 class="container__title">Процесс разработки</h2>
             <div class="slider designs shadow element-animation element-animation--bottom">
                 <div class="slider__wrapper">
-                    <div class="slider__items">
-                        <div class="slider__item">
-                            <img class="design__image" src="img/design3.png" alt="design__image" />
-                        </div>
-                        <div class="slider__item">
-                            <img class="design__image" src="img/design1.png" alt="design__image" />
-                        </div>
-                        <div class="slider__item">
-                            <img class="design__image" src="img/design4.png" alt="design__image" />
-                        </div>
-                        <div class="slider__item">
-                            <img class="design__image" src="img/design2.png" alt="design__image" />
-                        </div>
-                        <div class="slider__item">
-                            <img class="design__image" src="img/design5.png" alt="design__image" />
-                        </div>
-                        <div class="slider__item">
-                            <img class="design__image" src="img/design6.png" alt="design__image" />
-                        </div>
-                    </div>
+                    <ul class="slider__items">
+                        <li class="slider__item">
+                            <img class="design__image" src="img/design3.png" alt="design__image" >
+                        </li>
+                        <li class="slider__item">
+                            <img class="design__image" src="img/design1.png" alt="design__image" >
+                        </li>
+                        <li class="slider__item">
+                            <img class="design__image" src="img/design4.png" alt="design__image" >
+                        </li>
+                        <li class="slider__item">
+                            <img class="design__image" src="img/design2.png" alt="design__image" >
+                        </li>
+                        <li class="slider__item">
+                            <img class="design__image" src="img/design5.png" alt="design__image" >
+                        </li>
+                        <li class="slider__item">
+                            <img class="design__image" src="img/design6.png" alt="design__image" >
+                        </li>
+                    </ul>
                 </div>
-                <div class="slide-arrow slider__control  slider__control--prev">
-                </div>
-                <div class="slide-arrow slider__control slider__control--next">
-                </div>
+                <button class="slide-arrow slider__control  slider__control--prev">
+                </button>
+                <button class="slide-arrow slider__control slider__control--next">
+                </button>
             </div>
-        </div>
+        </section>
 
-        <div class="container">
-            <h1 class="container__title" id="team">Наша команда</h1>
-            <div class="team">
-                <div class="person element-animation element-animation--bottom">
+        <section class="container">
+            <h2 class="container__title" id="team">Наша команда</h2>
+            <ul class="team">
+                <li class="person element-animation element-animation--bottom">
                     <div class="person__avatar-container">
-                        <img class="person__avatar shadow" src="img/avatar1_ver2.png">
+                        <img class="person__avatar shadow" src="img/avatar1_ver2.png" alt="persons avatar">
                     </div>
                     <div class="person__info">
                         <span class="person__name">Сахатский Александр</span>
@@ -775,10 +784,10 @@
                         <span class="person__bio">Управленческий стаж: 8 лет
                             (специализация: «финансы и кредит» в «СПбГЭУ»)</span>
                     </div>
-                </div>
-                <div class="person element-animation element-animation--bottom">
+                </li>
+                <li class="person element-animation element-animation--bottom">
                     <div class="person__avatar-container">
-                        <img class="person__avatar shadow" src="img/avatar2_ver2.png">
+                        <img class="person__avatar shadow" src="img/avatar2_ver2.png" alt="persons avatar">
                     </div>
                     <div class="person__info">
                         <span class="person__name">Карпенко Леонид</span>
@@ -786,16 +795,16 @@
                             Научный руководитель
                         </span>
                         <span class="person__bio">Кандидат медицинских
-                            наук.</br>
+                            наук.<br>
                             Преподавательский стаж
                             более 20 лет
                         </span>
 
                     </div>
-                </div>
-                <div class="person element-animation element-animation--bottom">
+                </li>
+                <li class="person element-animation element-animation--bottom">
                     <div class="person__avatar-container">
-                        <img class="person__avatar shadow" src="img/avatar3_ver2.png">
+                        <img class="person__avatar shadow" src="img/avatar3_ver2.png" alt="persons avatar">
                     </div>
                     <div class="person__info">
                         <span class="person__name">Абрамов Роман</span>
@@ -803,11 +812,11 @@
                         <span class="person__bio">3 года опыта в производстве изделий.
                             Участник научно-исследовательских работ в Иране/Казахстане 2021-2022 г.</span>
                     </div>
-                </div>
+                </li>
 
-                <div class="person element-animation element-animation--bottom">
+                <li class="person element-animation element-animation--bottom">
                     <div class="person__avatar-container">
-                        <img class="person__avatar shadow" src="img/avatar4_ver2.png">
+                        <img class="person__avatar shadow" src="img/avatar4_ver2.png" alt="persons avatar">
                     </div>
 
                     <div class="person__info">
@@ -818,32 +827,32 @@
                         </span>
 
                     </div>
-                </div>
+                </li>
 
-                <div class="person element-animation element-animation--bottom">
+                <li class="person element-animation element-animation--bottom">
                     <div class="person__avatar-container">
-                        <img class="person__avatar shadow" src="img/avatar6_ver2.png">
+                        <img class="person__avatar shadow" src="img/avatar6_ver2.png" alt="persons avatar">
                     </div>
                     <div class="person__info">
                         <span class="person__name">Иванов Илья</span>
                         <span class="person__profession">Дизайнер протезов</span>
                         <span class="person__bio">Опыт в сфере дизайна более 15 лет</span>
                     </div>
-                </div>
-                <div class="person element-animation element-animation--bottom">
+                </li>
+                <li class="person element-animation element-animation--bottom">
                     <div class="person__avatar-container">
-                        <img class="person__avatar shadow" src="img/avatar7_ver2.png">
+                        <img class="person__avatar shadow" src="img/avatar7_ver2.png" alt="persons avatar">
                     </div>
                     <div class="person__info">
                         <span class="person__name">Бобков Кирилл</span>
                         <span class="person__profession">Программист</span>
                         <span class="person__bio">Опыт в сфере разработки программных интерфейсов 4 года</span>
                     </div>
-                </div>
+                </li>
 
-                <div class="person element-animation element-animation--bottom">
+                <li class="person element-animation element-animation--bottom">
                     <div class="person__avatar-container">
-                        <img class="person__avatar shadow" src="img/avatar5_ver2.png">
+                        <img class="person__avatar shadow" src="img/avatar5_ver2.png" alt="persons avatar">
                     </div>
                     <div class="person__info">
                         <span class="person__name">Вертер</span>
@@ -852,11 +861,11 @@
                         </span>
 
                     </div>
-                </div>
-            </div>
-        </div>
+                </li>
+            </ul>
+        </section>
 
-        <div class="container container--full-width container--without-bottom">
+        <section class="container container--full-width container--without-bottom">
             <div class="stay-in-touch">
                 <div class="stay-in-touch__content-container">
                     <div class="stay-in-touch__content element-animation element-animation--left">
@@ -867,7 +876,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     </main>
 
 
@@ -876,20 +885,20 @@
             <div class="footer__block">
                 <p class="footer__title">Сколково</p>
                 <a target="_blank" href="https://navigator.sk.ru/orn/1125414"><img src="img/iconSK.png"
-                        class="footerimgSK"></a>
+                        class="footerimgSK"  alt="skolkovo logo"></a>
             </div>
 
             <div class="footer__block">
                 <p class="footer__title">Социальные сети</p>
                 <a target="_blank" href="https://vk.com/modestatech">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="52px" height="52px">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="52" height="52">
                         <path fill="#1976d2" d="M24 4A20 20 0 1 0 24 44A20 20 0 1 0 24 4Z" />
                         <path fill="#fff"
                             d="M35.937,18.041c0.046-0.151,0.068-0.291,0.062-0.416C35.984,17.263,35.735,17,35.149,17h-2.618 c-0.661,0-0.966,0.4-1.144,0.801c0,0-1.632,3.359-3.513,5.574c-0.61,0.641-0.92,0.625-1.25,0.625C26.447,24,26,23.786,26,23.199 v-5.185C26,17.32,25.827,17,25.268,17h-4.649C20.212,17,20,17.32,20,17.641c0,0.667,0.898,0.827,1,2.696v3.623 C21,24.84,20.847,25,20.517,25c-0.89,0-2.642-3-3.815-6.932C16.448,17.294,16.194,17,15.533,17h-2.643 C12.127,17,12,17.374,12,17.774c0,0.721,0.6,4.619,3.875,9.101C18.25,30.125,21.379,32,24.149,32c1.678,0,1.85-0.427,1.85-1.094 v-2.972C26,27.133,26.183,27,26.717,27c0.381,0,1.158,0.25,2.658,2c1.73,2.018,2.044,3,3.036,3h2.618 c0.608,0,0.957-0.255,0.971-0.75c0.003-0.126-0.015-0.267-0.056-0.424c-0.194-0.576-1.084-1.984-2.194-3.326 c-0.615-0.743-1.222-1.479-1.501-1.879C32.062,25.36,31.991,25.176,32,25c0.009-0.185,0.105-0.361,0.249-0.607 C32.223,24.393,35.607,19.642,35.937,18.041z" />
                     </svg>
                 </a>
                 <a target="_blank" href="https://t.me/laba2kvadrata">
-                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 48 48">
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0" y="0" width="50" height="50" viewBox="0 0 48 48">
                         <path fill="#29b6f6" d="M24 4A20 20 0 1 0 24 44A20 20 0 1 0 24 4Z"></path>
                         <path fill="#fff"
                             d="M33.95,15l-3.746,19.126c0,0-0.161,0.874-1.245,0.874c-0.576,0-0.873-0.274-0.873-0.274l-8.114-6.733 l-3.97-2.001l-5.095-1.355c0,0-0.907-0.262-0.907-1.012c0-0.625,0.933-0.923,0.933-0.923l21.316-8.468 c-0.001-0.001,0.651-0.235,1.126-0.234C33.667,14,34,14.125,34,14.5C34,14.75,33.95,15,33.95,15z">
@@ -907,35 +916,42 @@
             <div class="footer__block footer__block--flex">
                 <p class="footer__title">СМИ о нас</p>
                 <a target="_blank" href="https://45.ru/text/health/2023/01/27/71984777/"><img src="img/45ru.png"
-                        class="footer__smi-link"></a>
+                        class="footer__smi-link" alt="45ru logo"></a>
                 <a target="_blank" href="https://ura.news/news/1052621906"><img
-                        src="https://s.ura.news/img/logos/logo_07_2020.svg" class="footer__smi-link"></a>
+                        src="https://s.ura.news/img/logos/logo_07_2020.svg" class="footer__smi-link" alt="ura news logo"></a>
             </div>
             <div class="footer__block">
                 <p class="footer__title">Контакты</p>
-                <p class="footer__number">+79088380555 Александр</p>
-                <p class="footer__number">+79195687836 Роман</p>
+                <p class="footer__number">
+                    <a href="tel:+79088380555">+79088380555</a>
+                    <span>Александр</span>
+                </p>
+                <p class="footer__number">
+                    <a href="tel:+79195687836">+79195687836</a>
+                    <span>Роман</span>
+                </p>
             </div>
             <div class="footer__block">
                 <p class="footer__title">Почта</p>
-                <p class="footer__mail">blagobionic44@gmail.com</p>
+                <p class="footer__mail"><a href="mailto:blagobionic44@gmail.com">blagobionic44@gmail.com</a></p>
             </div>
         </div>
         <div class="footer__block">
             <p class="footer__title">Адрес</p>
             <iframe class="footer__map shadow"
+                style="border: none;"
                 src="https://yandex.ru/map-widget/v1/?um=constructor%3A81da998328a234f9b1f1b6f3031d87ebfb28d9c844a61379ccb071c214c74164&amp;source=constructor"
-                width="100%" height="240" frameborder="0"></iframe>
+                width="100%" height="240"></iframe>
             <p>ООО "МОДЕСТА" (ОГРН 1234500001603)</p>
-            <p>640002, Курганская область, г. Курган,</p>
-            <p class="footer__address">ул.Коли
+            <address>640002, Курганская область, г. Курган,</address>
+            <address class="footer__address">ул.Коли
                 Мяготина, д. 150Б, офис 22
-            </p>
+            </address>
         </div>
     </footer>
 
     <button class="go-up-button" id="go-up-button">
-        <svg part="svg" class="svg" viewBox="0 0 32 32" data-icon-name="arrow-action-step">
+        <svg class="svg" viewBox="0 0 32 32" data-icon-name="arrow-action-step">
             <path
                 d="M17.333 24.733l-1.867-1.867 5.6-5.6h-15.2v-2.667h15.067l-5.467-5.467 1.867-1.867 8.8 8.8-0.267 0.267-8.533 8.4z">
             </path>
