@@ -159,12 +159,21 @@
         left: 0;
         width: 100%;
         height: 100%;
-        padding: 15px;
+        padding: 30px;
         transform: translateX(-100%);
         transition: transform 0.5s; 
         background-color: var(--bg-color-opacity);
         z-index: 4;
     }
+
+        /* if backdrop support: very transparent and blurred */
+        @supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
+        .nav {
+            -webkit-backdrop-filter: blur(50px);
+            background-color: transparent;
+            backdrop-filter: blur(50px);
+        }
+        }
 
     .nav.active {
         transform: translateX(0);
@@ -269,5 +278,9 @@
     .header__secondary-line {
         font-size: 14px;
         line-height: 20px;
+    }
+
+    .header__nav-button--disabled {
+        display: none;
     }
 }

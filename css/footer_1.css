@@ -45,7 +45,7 @@
 }
 
 .footer__number {
-    white-space: nowrap;
+    margin-bottom: 10px;
 }
 
 .footer__title {
