@@ -1,8 +1,8 @@
 :root {
     --font-color: #000000;
 
-    --bg-color: #eeeeee;
-    --bg-color-opacity: rgba(238, 238, 238, 0.417);
+    --bg-color: #f9f9f9;
+    --bg-color-opacity: rgba(255, 255, 255, 0.694);
     --bg-color-gradient-1: #191919;
     --bg-color-gradient-2: #393939;
 
