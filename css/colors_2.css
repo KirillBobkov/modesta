@@ -2,7 +2,7 @@
     --font-color: #000000;
 
     --bg-color: #eeeeee;
-    --bg-color-opacity: rgba(238, 238, 238, 0.9);
+    --bg-color-opacity: rgba(238, 238, 238, 0.417);
     --bg-color-gradient-1: #191919;
     --bg-color-gradient-2: #393939;
 
@@ -18,7 +18,7 @@
     --font-color: #ffffff;
     
     --bg-color: #000000;
-    --bg-color-opacity: rgba(0, 0, 0, 0.923);
+    --bg-color-opacity: rgba(0, 0, 0, 0.259);
     --bg-color-gradient-1: #191919;
     --bg-color-gradient-2: #393939;
 
