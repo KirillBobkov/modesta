@@ -1,5 +1,6 @@
 :root {
     --font-color: #000000;
+    --secondary-font-color: rgb(31, 31, 31);
 
     --bg-color: #f9f9f9;
     --bg-color-opacity: rgba(255, 255, 255, 0.694);
@@ -16,6 +17,7 @@
 
 :root[theme='dark'] {
     --font-color: #ffffff;
+    --secondary-font-color: rgb(161, 161, 161);
     
     --bg-color: #000000;
     --bg-color-opacity: rgba(0, 0, 0, 0.259);

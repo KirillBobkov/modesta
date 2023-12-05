@@ -33,6 +33,7 @@
 .advantages__item-description {
     max-width: 400px;
     text-shadow: 3px 3px 5px var(--card-bg-color), -3px 3px 5px var(--card-bg-color), -3px -3px 5px var(--card-bg-color),  3px -3px 5px var(--card-bg-color);
+    color: var(--secondary-font-color);
 }
 
 .advantages__item--right {

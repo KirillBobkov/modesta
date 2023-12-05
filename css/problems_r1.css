@@ -58,6 +58,7 @@
   .problem__description {
     font-size: 18px;
     line-height: 28px;
+    color: var(--secondary-font-color);
   }
 
   .problems .slider__indicators li {

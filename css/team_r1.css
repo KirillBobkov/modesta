@@ -54,6 +54,7 @@
     line-height: 18px;
     text-align: left;
     width: 100%;
+    color: var(--secondary-font-color);
 }
 
 .person__profession {
